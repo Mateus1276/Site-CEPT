@@ -1,0 +1,5125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<meta content="nosniff" http-equiv="X-Content-Type-Options"/>
+<meta content="camera=(), microphone=(), geolocation=()" http-equiv="Permissions-Policy"/>
+<meta content="CEPT - Centro Educacional Profissional e Tecnológico" name="description"/>
+<title>CEPT | Centro Educacional Profissional e Tecnológico</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", Arial, sans-serif;
+            color: #14213d;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .container {
+            width: min(1180px, calc(100% - 40px));
+            margin: auto;
+        }
+
+
+        /* =========================
+           CORES
+        ========================= */
+
+        :root {
+            --azul: #062b70;
+            --azul-claro: #0b4da2;
+            --vermelho: #ed2b24;
+            --texto: #14213d;
+            --cinza: #667085;
+            --fundo: #f7f9fc;
+            --branco: #ffffff;
+            --borda: #e5e7eb;
+
+            --sombra:
+                0 16px 45px rgba(11, 45, 95, 0.12);
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(4, 32, 82, 0.98);
+
+            color: white;
+
+            box-shadow:
+                0 4px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav {
+            min-height: 76px;
+
+            display: flex;
+            align-items: center;
+
+            gap: 28px;
+        }
+
+
+        /* LOGO */
+
+        .brand {
+            display: flex;
+            align-items: center;
+
+            gap: 11px;
+
+            min-width: 270px;
+        }
+
+       .brand-mark {
+            width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+    border-radius: 0;
+
+    flex-shrink: 0;
+}
+
+.brand-mark img {
+    width: 58px;
+    height: 58px;
+
+    object-fit: contain;
+    display: block;
+}
+
+        .brand strong {
+            display: block;
+
+            font-size: 25px;
+
+            line-height: 1;
+        }
+
+        .brand small {
+            display: block;
+
+            font-size: 7px;
+
+            line-height: 1.25;
+
+            letter-spacing: .5px;
+
+            margin-top: 5px;
+        }
+
+
+        /* MENU */
+
+        .menu {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 23px;
+
+            flex: 1;
+        }
+
+        .menu a {
+            position: relative;
+
+            padding: 27px 0;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            opacity: .9;
+
+            transition: .2s;
+        }
+
+        .menu a:hover {
+            opacity: 1;
+        }
+
+        .menu a.active {
+            opacity: 1;
+        }
+
+        .menu a.active::after {
+            content: "";
+
+            position: absolute;
+
+            bottom: 17px;
+
+            left: 0;
+            right: 0;
+
+            height: 3px;
+
+            border-radius: 3px;
+
+            background: var(--vermelho);
+        }
+
+
+        /* BOTÃO ÁREA DO ALUNO */
+
+        .student-button {
+            border: 1px solid rgba(255,255,255,.4);
+
+            border-radius: 30px;
+
+            padding: 10px 18px;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            white-space: nowrap;
+
+            transition: .2s;
+        }
+
+        .student-button:hover {
+            background: white;
+            color: var(--azul);
+        }
+
+
+        /* MENU MOBILE */
+
+        .menu-toggle {
+            display: none;
+
+            background: none;
+
+            border: none;
+
+            color: white;
+
+            font-size: 28px;
+
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+    .hero {
+    position: relative;
+    height: 540px;
+    overflow: hidden;
+}
+
+    .hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background: url("img/image copy 6.png")
+                center top / cover
+                no-repeat;
+
+    transform: none;
+}
+
+     .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    pointer-events: none;
+}
+
+        .hero-content {
+            position: relative;
+
+            z-index: 2;
+        }
+
+        .hero-copy {
+            max-width: 610px;
+
+            padding: 80px 0 120px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+
+            font-size: 12px;
+
+            letter-spacing: 1.6px;
+
+            font-weight: 800;
+
+            margin-bottom: 13px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 5.2vw, 70px);
+
+            line-height: 1.02;
+
+            letter-spacing: -2.5px;
+
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 510px;
+
+            font-size: 17px;
+
+            color: #edf4ff;
+
+            margin-bottom: 28px;
+        }
+
+
+        /* BOTÕES */
+
+        .hero-actions {
+            display: flex;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 30px;
+
+            padding: 13px 22px;
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+            transition: .2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-red {
+            background: var(--vermelho);
+
+            color: white;
+        }
+
+        .btn-light {
+            background: white;
+
+            color: var(--azul);
+        }
+
+        .btn-outline {
+            border: 1px solid #99a7bd;
+
+            color: var(--azul);
+
+            margin-top: 25px;
+        }
+
+
+        /* =========================
+           ACESSO RÁPIDO
+        ========================= */
+
+        .quick-wrap {
+            margin-top: -75px;
+
+            position: relative;
+
+            z-index: 5;
+        }
+
+        .quick-card {
+            background: white;
+
+            border-radius: 20px;
+
+            box-shadow: var(--sombra);
+
+            padding: 22px 25px;
+        }
+
+        .section-label {
+            font-size: 12px;
+
+            font-weight: 800;
+
+            color: var(--azul);
+
+            margin-bottom: 13px;
+        }
+
+        .quick-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(5, 1fr);
+
+            gap: 12px;
+        }
+
+        .quick-item {
+            border: 1px solid var(--borda);
+
+            border-radius: 14px;
+
+            padding: 17px 14px;
+
+            display: flex;
+
+            gap: 13px;
+
+            align-items: center;
+
+            min-height: 105px;
+
+            transition: .2s;
+        }
+
+        .quick-item:hover {
+            border-color: #aac0df;
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 8px 22px rgba(20,45,90,.08);
+        }
+
+        .quick-item strong {
+            display: block;
+
+            color: var(--azul);
+
+            font-size: 14px;
+
+            line-height: 1.25;
+        }
+
+        .quick-item small {
+            display: block;
+
+            color: #5f6b7c;
+
+            font-size: 11px;
+
+            margin-top: 6px;
+        }
+
+        .quick-icon {
+            width: 43px;
+            height: 43px;
+
+            border-radius: 13px;
+
+            display: grid;
+
+            place-items: center;
+
+            font-size: 21px;
+
+            flex-shrink: 0;
+        }
+
+        .blue {
+            background: #e8f0ff;
+        }
+
+        .green {
+            background: #e6f6ef;
+        }
+
+        .orange {
+            background: #fff0d9;
+        }
+
+        .purple {
+            background: #f0e8ff;
+        }
+
+        .red {
+            background: #ffe8e8;
+        }
+
+
+        /* =========================
+           SEÇÕES
+        ========================= */
+
+        .section {
+            padding: 90px 0;
+        }
+
+        h2 {
+            font-size:
+                clamp(30px, 4vw, 46px);
+
+            line-height: 1.08;
+
+            letter-spacing: -1.4px;
+
+            margin-bottom: 18px;
+        }
+
+        .blue-text {
+            color: var(--azul-claro);
+        }
+
+        .about-copy .eyebrow.vinho-text {
+        color: #7A1820;
+        }
+
+        .red-text {
+            color: var(--vermelho);
+        }
+        
+        .news .eyebrow.vinho-text {
+        color: #7A1820;
+        }
+
+        
+        .gallery .eyebrow.vinho-text {
+        color: #7A1820;
+        }
+
+        /* =========================
+           SOBRE
+        ========================= */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+
+            height: 480px;
+
+            object-fit: cover;
+
+            border-radius: 24px;
+
+            box-shadow: var(--sombra);
+        }
+
+        .image-badge {
+            position: absolute;
+
+            left: 22px;
+            bottom: 22px;
+
+            background:
+                rgba(4,32,82,.94);
+
+            color: white;
+
+            border-radius: 15px;
+
+            padding: 14px 18px;
+
+            box-shadow:
+                0 12px 30px rgba(0,0,0,.2);
+        }
+
+        .image-badge strong {
+            display: block;
+
+            font-size: 20px;
+        }
+
+        .image-badge span {
+            font-size: 11px;
+
+            color: #dce8ff;
+        }
+
+        .about-copy p {
+            color: #58657a;
+
+            margin-bottom: 12px;
+
+            max-width: 570px;
+        }
+
+        .values {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 15px;
+
+            margin-top: 24px;
+        }
+
+        .values div {
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            font-size: 13px;
+        }
+
+        .values span {
+            width: 31px;
+            height: 31px;
+
+            border-radius: 9px;
+
+            background: #edf4ff;
+
+            color: var(--azul);
+
+            display: grid;
+
+            place-items: center;
+
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           SERVIÇOS
+        ========================= */
+
+        .services {
+            background: var(--fundo);
+        }
+
+        .section-heading {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: end;
+
+            gap: 30px;
+
+            margin-bottom: 35px;
+        }
+
+        .section-heading p {
+            max-width: 430px;
+
+            color: var(--cinza);
+
+            font-size: 14px;
+        }
+
+        .service-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(5, 1fr);
+
+            gap: 15px;
+        }
+
+        .service-card {
+            background: white;
+
+            border: 1px solid var(--borda);
+
+            border-radius: 18px;
+
+            padding: 24px;
+
+            min-height: 230px;
+
+            transition: .2s;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        /* =====================================================
+           SERVIÇOS — detalhes de cor
+           Somente visual: mantém o conteúdo e a estrutura.
+           ===================================================== */
+
+        .service-card::before {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            right: 0;
+
+            height: 4px;
+
+            background: var(--service-color);
+        }
+
+        .service-card:nth-child(1) {
+            --service-color: #0B4DA2;
+        }
+
+        .service-card:nth-child(2) {
+            --service-color: #16834B;
+        }
+
+        .service-card:nth-child(3) {
+            --service-color: #7A1820;
+        }
+
+        .service-card:nth-child(4) {
+            --service-color: #52606D;
+        }
+
+        .service-card:nth-child(5) {
+            --service-color: #D28A00;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+
+            border-color: var(--service-color);
+
+            box-shadow:
+                0 15px 35px rgba(10,40,80,.1);
+        }
+
+        .service-number {
+            color: var(--service-color);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            margin-bottom: 35px;
+
+            transition: .2s;
+        }
+
+        .service-card:hover .service-number {
+            letter-spacing: 1px;
+        }
+
+        .service-card h3 {
+            color: var(--azul);
+
+            font-size: 18px;
+
+            margin-bottom: 9px;
+        }
+
+        .service-card p {
+            font-size: 12px;
+
+            color: var(--cinza);
+
+            margin-bottom: 22px;
+        }
+
+        .service-card a {
+            color: var(--vermelho);
+
+            font-size: 12px;
+
+            font-weight: 800;
+        }
+
+
+        /* =========================
+           ALUNOS
+        ========================= */
+
+        .student-grid {
+            display: grid;
+
+            grid-template-columns: .9fr 1.1fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+        .students p {
+            color: var(--cinza);
+
+            max-width: 540px;
+        }
+
+        /* =====================================================
+           ALUNOS DO CEPT — OPÇÃO B
+           Visual moderno / tecnológico
+           ===================================================== */
+
+        #alunos {
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 82% 50%, rgba(40, 120, 220, 0.08), transparent 30%),
+                linear-gradient(135deg, #f8fbff 0%, #eef5fc 100%);
+        }
+
+        #alunos::before {
+            content: "";
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            right: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid rgba(30, 100, 190, 0.10);
+            border-radius: 50%;
+            box-shadow:
+                -35px 0 0 -34px rgba(30, 100, 190, 0.08),
+                -70px 0 0 -69px rgba(30, 100, 190, 0.06);
+            pointer-events: none;
+        }
+
+        .students-image {
+            position: relative;
+            width: 100%;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            padding: 12px;
+            box-sizing: border-box;
+
+            background: rgba(255, 255, 255, 0.72);
+            border: 1px solid rgba(255, 255, 255, 0.95);
+            border-radius: 28px;
+
+            box-shadow:
+                0 24px 55px rgba(15, 50, 90, 0.13),
+                0 5px 18px rgba(15, 50, 90, 0.07);
+
+            backdrop-filter: blur(8px);
+        }
+
+        .students-image::before {
+            content: "";
+            position: absolute;
+            width: 90px;
+            height: 4px;
+            top: 0;
+            left: 42px;
+            background: #c91f1f;
+            border-radius: 0 0 8px 8px;
+            z-index: 2;
+        }
+
+        .students-image img {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 520px;
+
+            /* A imagem completa continua visível, sem cortar as letras. */
+            object-fit: contain;
+            object-position: center center;
+
+            border-radius: 20px;
+            box-shadow: none;
+        }
+
+        .check-list {
+            list-style: none;
+
+            margin-top: 24px;
+
+            display: grid;
+
+            gap: 12px;
+        }
+
+        .check-list li {
+            font-size: 14px;
+
+            font-weight: 600;
+        }
+
+        .check-list li::before {
+            content: "✓";
+
+            display: inline-grid;
+
+            place-items: center;
+
+            width: 24px;
+            height: 24px;
+
+            background: #eaf6ee;
+
+            color: #198754;
+
+            border-radius: 50%;
+
+            margin-right: 10px;
+        }
+
+
+        /* =========================
+           NOTÍCIAS
+        ========================= */
+
+        .news {
+            background: var(--fundo);
+        }
+
+        .news-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .news-card {
+            background: white;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            border: 1px solid var(--borda);
+
+            transition: .2s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 35px rgba(20,40,80,.1);
+        }
+
+        .news-card > img {
+            width: 100%;
+
+            height: 215px;
+
+            /* Mantém o comportamento original dos cards 01 e 03. */
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        /* =====================================================
+           NOTÍCIAS — somente a imagem do 2º card
+           Mostra a foto das bandeiras sem aquele zoom excessivo.
+           ===================================================== */
+
+                /* =====================================================
+           NOTÍCIAS — AJUSTE SOMENTE NO CARD DO MEIO
+           Foto mais larga, mas com altura equilibrada.
+           Mantém a proporção original e não corta a escrita.
+           ===================================================== */
+
+                /* =====================================================
+           NOTÍCIAS — SOMENTE CARD DO MEIO
+           Foto mais larga, sem esticar nem cortar a escrita.
+           ===================================================== */
+
+        .news-card:nth-child(2) > img {
+            width: 100%;
+            height: 215px;
+            object-fit: cover;
+
+            /* Mostra mais a parte inferior da foto, onde estão as pessoas. */
+            object-position: center 78%;
+
+            display: block;
+            margin: 0;
+            background: #f5f6f8;
+            transform: none;
+        }
+
+        .news-card:nth-child(2) {
+            overflow: hidden;
+        }
+
+        /* Mantém os três cards alinhados e com a mesma estrutura visual. */
+        .news-grid {
+            align-items: stretch;
+        }
+
+        .news-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-body {
+            padding: 21px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .news-body small {
+            font-size: 10px;
+
+            font-weight: 800;
+
+            color: var(--azul-claro);
+        }
+
+        .news-body h3 {
+            font-size: 18px;
+
+            line-height: 1.25;
+
+            margin: 7px 0;
+        }
+
+        /* Primeiro card — texto da notícia do Seminário.
+           Somente ajusta a leitura do card mais longo. */
+        .news-card:first-child .news-body h3 {
+            font-size: 16px;
+            line-height: 1.35;
+        }
+
+        .news-body p {
+            font-size: 12px;
+
+            color: var(--cinza);
+
+            margin-bottom: 13px;
+        }
+
+        .news-body a {
+            margin-top: auto;
+            font-size: 12px;
+
+            font-weight: 800;
+
+            color: var(--vermelho);
+        }
+
+
+        /* =========================
+           GALERIA
+        ========================= */
+
+        .gallery {
+            background: white;
+        }
+
+        .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery-item {
+    position: relative;
+    height: 245px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #eef2f7;
+    box-shadow: 0 10px 28px rgba(11, 45, 95, 0.10);
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .35s ease;
+}
+
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(3, 28, 72, .78),
+        rgba(3, 28, 72, 0) 55%
+    );
+    pointer-events: none;
+}
+
+.gallery-caption {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 16px;
+    z-index: 2;
+    color: #fff;
+}
+
+.gallery-caption span {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: .85;
+    margin-bottom: 3px;
+}
+
+.gallery-caption strong {
+    display: block;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.04);
+}
+
+@media(max-width:760px) {
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .gallery-item {
+        height: 210px;
+    }
+}
+
+@media(max-width:460px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 220px;
+    }
+}
+
+/* =========================
+           CONTATO
+        ========================= */
+
+        .contact {
+            background: var(--fundo);
+
+            padding-top: 30px;
+        }
+
+        .contact-box {
+            background:
+                linear-gradient(
+                    110deg,
+                    #062b70,
+                    #0a4c9b
+                );
+
+            border-radius: 25px;
+
+            color: white;
+
+            padding: 50px 55px;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 50px;
+
+            align-items: center;
+        }
+
+        .contact-box h2 {
+            color: white;
+        }
+
+        .contact-box p {
+            color: #d9e6fa;
+
+            max-width: 520px;
+        }
+
+        .contact-items {
+            display: grid;
+
+            gap: 14px;
+        }
+
+        .contact-items a {
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 14px 16px;
+
+            border:
+                1px solid
+                rgba(255,255,255,.18);
+
+            border-radius: 14px;
+
+            background:
+                rgba(255,255,255,.05);
+        }
+
+        .contact-items a > span {
+            width: 38px;
+            height: 38px;
+
+            border-radius: 11px;
+
+            background:
+                rgba(255,255,255,.12);
+
+            display: grid;
+
+            place-items: center;
+        }
+
+        .contact-items small,
+        .contact-items strong {
+            display: block;
+        }
+
+        .contact-items small {
+            font-size: 10px;
+
+            color: #b9d0f0;
+        }
+
+        .contact-items strong {
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .footer {
+            background: #031d4e;
+
+            color: #dce8fa;
+
+            padding-top: 55px;
+        }
+
+        .footer-grid {
+            display: grid;
+
+            grid-template-columns:
+                2fr 1fr 1fr 1fr;
+
+            gap: 40px;
+
+            padding-bottom: 45px;
+        }
+
+        .footer h4 {
+            color: white;
+
+            font-size: 13px;
+
+            margin-bottom: 13px;
+        }
+
+        .footer-grid > div:not(.footer-brand) a {
+            display: block;
+
+            font-size: 12px;
+
+            margin: 7px 0;
+
+            color: #b8c9e2;
+        }
+
+        .footer-brand p {
+            font-size: 12px;
+
+            color: #aebfd8;
+
+            margin-top: 16px;
+
+            max-width: 250px;
+        }
+
+        .socials {
+            display: flex;
+
+            gap: 9px;
+        }
+
+        .socials a {
+            width: 35px;
+            height: 35px;
+
+            border:
+                1px solid
+                rgba(255,255,255,.25);
+
+            border-radius: 50%;
+
+            display: grid;
+
+            place-items: center;
+
+            font-weight: 800;
+        }
+
+        .footer-bottom {
+            border-top:
+                1px solid
+                rgba(255,255,255,.1);
+
+            padding: 17px 0;
+
+            font-size: 11px;
+
+            color: #93a8c6;
+        }
+
+
+        /* =========================
+           BOTÃO TOPO
+        ========================= */
+
+        .back-top {
+            position: fixed;
+
+            right: 20px;
+            bottom: 20px;
+
+            width: 42px;
+            height: 42px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: var(--vermelho);
+
+            color: white;
+
+            font-size: 20px;
+
+            display: none;
+
+            place-items: center;
+
+            z-index: 900;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 10px 25px rgba(0,0,0,.2);
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media(max-width:1000px) {
+
+            .menu {
+                gap: 12px;
+            }
+
+            .menu a {
+                font-size: 11px;
+            }
+
+            .student-button {
+                display: none;
+            }
+
+            .quick-grid {
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+
+            .service-grid {
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+        }
+
+
+        /* =========================
+           CELULAR
+        ========================= */
+
+        @media(max-width:760px) {
+
+            .container {
+                width:
+                    min(
+                        calc(100% - 28px),
+                        1180px
+                    );
+            }
+
+            .nav {
+                min-height: 68px;
+            }
+
+            .brand {
+                min-width: 0;
+            }
+
+            .brand small {
+                display: none;
+            }
+
+            .brand strong {
+                font-size: 22px;
+            }
+
+            .brand-mark {
+                width: 42px;
+                height: 42px;
+            }
+
+            .menu-toggle {
+                display: block;
+
+                margin-left: auto;
+            }
+
+            .menu {
+                display: none;
+
+                position: absolute;
+
+                top: 68px;
+
+                left: 0;
+                right: 0;
+
+                background: var(--azul);
+
+                padding: 10px 20px;
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+                gap: 0;
+            }
+
+            .menu.open {
+                display: flex;
+            }
+
+            .menu a {
+                padding: 13px;
+
+                border-bottom:
+                    1px solid
+                    rgba(255,255,255,.08);
+            }
+
+            .menu a.active::after {
+                display: none;
+            }
+
+            .hero {
+                min-height: 670px;
+            }
+
+            .hero-overlay {
+                background:
+                    linear-gradient(
+                        90deg,
+                        rgba(2,22,58,.93),
+                        rgba(3,39,91,.60)
+                    );
+            }
+
+            .hero-copy {
+                padding:
+                    65px 0 130px;
+            }
+
+            .hero h1 {
+                font-size: 44px;
+            }
+
+            .quick-wrap {
+                margin-top: -95px;
+            }
+
+            .quick-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+            .section {
+                padding: 65px 0;
+            }
+
+            .about-grid,
+            .student-grid,
+            .contact-box {
+                grid-template-columns: 1fr;
+
+                gap: 35px;
+            }
+
+            .about-image img {
+                height: 360px;
+            }
+
+            .students-image {
+                min-height: 400px;
+            }
+
+            .students-image img {
+                height: 500px;
+            }
+
+            .section-heading {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+            .service-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns:
+                    1fr 1fr;
+
+                grid-template-rows:
+                    220px 220px;
+            }
+
+            .g1 {
+                grid-row: auto;
+
+                grid-column:
+                    1 / 3;
+            }
+
+            .contact-box {
+                padding:
+                    35px 25px;
+            }
+
+            .footer-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+            .values {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* =========================
+           CELULAR PEQUENO
+        ========================= */
+
+        @media(max-width:460px) {
+
+            .quick-grid,
+            .service-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+
+                grid-template-rows:
+                    220px
+                    220px
+                    220px;
+            }
+
+            .g1 {
+                grid-column: auto;
+            }
+
+            .about-image img {
+                height: 310px;
+            }
+
+            .students-image {
+                min-height: 340px;
+                padding: 8px;
+            }
+
+            .students-image img {
+                height: 430px;
+            }
+        }
+
+
+        /* =====================================================
+           ASSISTENTE CEPT — "PRECISA DE AJUDA?"
+           ADIÇÃO — não altera os estilos existentes.
+           ===================================================== */
+
+        .help-assistant {
+            position: fixed;
+            right: 20px;
+            bottom: 78px;
+            z-index: 2700;
+        }
+
+        .help-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            min-height: 48px;
+            padding: 12px 17px;
+            border: 1px solid rgba(255,255,255,.18);
+            border-radius: 999px;
+            background: linear-gradient(135deg, #062b70, #0b4da2);
+            color: #fff;
+            font: inherit;
+            font-size: 12px;
+            font-weight: 800;
+            cursor: pointer;
+            box-shadow: 0 12px 30px rgba(6,43,112,.24), 0 3px 10px rgba(0,0,0,.08);
+            transition: .22s ease;
+        }
+
+        .help-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 34px rgba(6,43,112,.30), 0 5px 13px rgba(0,0,0,.10);
+        }
+
+        .help-button-icon {
+            width: 27px;
+            height: 27px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,.15);
+            font-size: 14px;
+        }
+
+        .help-panel {
+            display: none;
+            position: absolute;
+            right: 0;
+            bottom: 60px;
+            width: 350px;
+            max-width: calc(100vw - 40px);
+            overflow: hidden;
+            background: #fff;
+            color: var(--texto);
+            border: 1px solid rgba(6,43,112,.10);
+            border-radius: 20px;
+            box-shadow: 0 24px 60px rgba(7,34,76,.22), 0 5px 18px rgba(7,34,76,.08);
+        }
+
+        .help-panel.show {
+            display: block;
+            animation: helpPanelIn .18s ease-out;
+        }
+
+        @keyframes helpPanelIn {
+            from { opacity: 0; transform: translateY(8px) scale(.98); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .help-header {
+            padding: 18px 18px 15px;
+            background: linear-gradient(135deg, #062b70, #0b4da2);
+            color: #fff;
+        }
+
+        .help-header strong {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .help-header span {
+            display: block;
+            font-size: 11px;
+            line-height: 1.5;
+            color: rgba(255,255,255,.82);
+        }
+
+        .help-questions {
+            padding: 12px;
+            display: grid;
+            gap: 8px;
+        }
+
+        .help-question {
+            width: 100%;
+            padding: 12px 13px;
+            border: 1px solid var(--borda);
+            border-radius: 12px;
+            background: #fff;
+            color: var(--texto);
+            text-align: left;
+            font: inherit;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: .18s ease;
+        }
+
+        .help-question:hover {
+            border-color: #b7c8e4;
+            background: #f7faff;
+            transform: translateX(2px);
+        }
+
+        .help-answer {
+            display: none;
+            margin: 0 12px 12px;
+            padding: 13px;
+            border-radius: 12px;
+            background: #f6f9fd;
+            border: 1px solid #e6edf7;
+        }
+
+        .help-answer.show { display: block; }
+
+        .help-answer strong {
+            display: block;
+            color: var(--azul);
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .help-answer p {
+            color: var(--cinza);
+            font-size: 11px;
+            line-height: 1.55;
+            margin-bottom: 10px;
+        }
+
+        .help-actions {
+            display: flex;
+            gap: 7px;
+            flex-wrap: wrap;
+        }
+
+        .help-actions a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 34px;
+            padding: 8px 11px;
+            border-radius: 999px;
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .help-whatsapp {
+            background: #e9f8ef;
+            color: #16834b;
+        }
+
+        .help-email {
+            background: #eef3fb;
+            color: var(--azul);
+        }
+
+        @media(max-width:760px) {
+            .help-assistant { right: 12px; bottom: 74px; }
+            .help-button { min-height: 45px; padding: 10px 14px; font-size: 11px; }
+            .help-panel {
+                right: 0;
+                bottom: 57px;
+                width: calc(100vw - 24px);
+                max-width: 380px;
+            }
+        }
+
+        @media(max-width:460px) {
+            .help-assistant { right: 12px; bottom: 70px; }
+            .help-button { padding: 10px 13px; }
+            .help-button-icon { width: 25px; height: 25px; }
+            .help-panel { width: calc(100vw - 24px); }
+        }
+
+        /* =====================================================
+           TRIAGEM DE ASSUNTOS SOBRE O ALUNO
+           ADIÇÃO — integrada ao assistente existente.
+           ===================================================== */
+
+        .student-triage {
+            display: none;
+            padding: 12px;
+        }
+
+        .student-triage.show {
+            display: block;
+            animation: helpPanelIn .18s ease-out;
+        }
+
+        .triage-back {
+            border: 0;
+            background: transparent;
+            color: var(--azul);
+            font: inherit;
+            font-size: 11px;
+            font-weight: 800;
+            cursor: pointer;
+            padding: 4px 0 10px;
+        }
+
+        .triage-title {
+            display: block;
+            color: var(--azul);
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .triage-subtitle {
+            display: block;
+            color: var(--cinza);
+            font-size: 10px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .triage-options {
+            display: grid;
+            gap: 7px;
+        }
+
+        .triage-option {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 10px 11px;
+            border: 1px solid var(--borda);
+            border-radius: 11px;
+            background: #fff;
+            color: var(--texto);
+            text-align: left;
+            font: inherit;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: .18s ease;
+        }
+
+        .triage-option:hover {
+            border-color: #b7c8e4;
+            background: #f7faff;
+            transform: translateX(2px);
+        }
+
+        .triage-priority {
+            margin-left: auto;
+            white-space: nowrap;
+            padding: 4px 7px;
+            border-radius: 999px;
+            font-size: 8px;
+            font-weight: 800;
+        }
+
+        .priority-high {
+            background: #ffe8e8;
+            color: #b42318;
+        }
+
+        .priority-attention {
+            background: #fff0d9;
+            color: #a15c00;
+        }
+
+        .priority-normal {
+            background: #fff6d8;
+            color: #8a6500;
+        }
+
+        .priority-low {
+            background: #e9f8ef;
+            color: #16834b;
+        }
+
+        .triage-form {
+            display: none;
+            padding: 12px;
+        }
+
+        .triage-form.show {
+            display: block;
+            animation: helpPanelIn .18s ease-out;
+        }
+
+        .triage-selected {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            padding: 9px 10px;
+            margin-bottom: 10px;
+            border-radius: 11px;
+            background: #f6f9fd;
+            border: 1px solid #e6edf7;
+        }
+
+        .triage-selected strong {
+            color: var(--azul);
+            font-size: 11px;
+        }
+
+        .triage-selected span {
+            white-space: nowrap;
+            padding: 4px 7px;
+            border-radius: 999px;
+            font-size: 8px;
+            font-weight: 800;
+        }
+
+        .triage-selected-priority {
+            margin-left: auto;
+        }
+
+        .triage-fields {
+            display: grid;
+            gap: 8px;
+        }
+
+        .triage-fields label {
+            display: grid;
+            gap: 4px;
+            color: var(--texto);
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .triage-fields input,
+        .triage-fields textarea {
+            width: 100%;
+            border: 1px solid var(--borda);
+            border-radius: 9px;
+            padding: 9px 10px;
+            background: #fff;
+            color: var(--texto);
+            font: inherit;
+            font-size: 11px;
+            outline: none;
+        }
+
+        .triage-fields input:focus,
+        .triage-fields textarea:focus {
+            border-color: #9db5da;
+            box-shadow: 0 0 0 3px rgba(11,77,162,.07);
+        }
+
+        .triage-fields textarea {
+            min-height: 70px;
+            resize: vertical;
+        }
+
+        .triage-note {
+            color: var(--cinza);
+            font-size: 9px;
+            line-height: 1.45;
+            margin-top: 8px;
+        }
+
+        .triage-submit {
+            width: 100%;
+            margin-top: 10px;
+            border: 0;
+            border-radius: 999px;
+            padding: 10px 13px;
+            background: #16834b;
+            color: #fff;
+            font: inherit;
+            font-size: 11px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: .18s ease;
+        }
+
+        .triage-submit:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 7px 18px rgba(22,131,75,.20);
+        }
+
+        @media(max-width:760px) {
+            .student-triage,
+            .triage-form {
+                padding: 11px;
+            }
+
+            .triage-option {
+                padding: 10px;
+            }
+
+            .triage-priority {
+                font-size: 7px;
+            }
+        }
+
+        /* =========================
+           PRIVACIDADE / LGPD
+        ========================= */
+
+        .privacy-notice {
+            display: none;
+            position: fixed;
+            left: 18px;
+            right: 18px;
+            bottom: 18px;
+            z-index: 3000;
+            max-width: 760px;
+            margin: auto;
+            background: #ffffff;
+            color: var(--texto);
+            border: 1px solid var(--borda);
+            border-radius: 18px;
+            box-shadow: 0 18px 55px rgba(0,0,0,.22);
+            padding: 20px;
+        }
+
+        .privacy-notice.show {
+            display: block;
+        }
+
+        .privacy-notice h3 {
+            color: var(--azul);
+            font-size: 17px;
+            margin-bottom: 7px;
+        }
+
+        .privacy-notice p {
+            color: var(--cinza);
+            font-size: 12px;
+            line-height: 1.6;
+            margin-bottom: 13px;
+        }
+
+        .privacy-notice-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .privacy-notice button,
+        .privacy-notice a {
+            border: 0;
+            border-radius: 25px;
+            padding: 10px 15px;
+            font-size: 12px;
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        .privacy-accept {
+            background: var(--azul);
+            color: #fff;
+        }
+
+        .privacy-settings {
+            background: #eef3fb;
+            color: var(--azul);
+        }
+
+        .privacy-link {
+            color: var(--vermelho);
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        .privacy-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 4000;
+            background: rgba(2, 15, 35, .72);
+            padding: 25px;
+            overflow-y: auto;
+        }
+
+        .privacy-modal.show {
+            display: block;
+        }
+
+        .privacy-modal-content {
+            position: relative;
+            width: min(850px, 100%);
+            margin: 35px auto;
+            background: #fff;
+            border-radius: 22px;
+            padding: 35px;
+            box-shadow: 0 25px 80px rgba(0,0,0,.30);
+        }
+
+        .privacy-modal-content h2 {
+            color: var(--azul);
+            font-size: 30px;
+        }
+
+        .privacy-modal-content h3 {
+            color: var(--azul);
+            font-size: 18px;
+            margin: 25px 0 8px;
+        }
+
+        .privacy-modal-content p,
+        .privacy-modal-content li {
+            color: #58657a;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .privacy-modal-content ul {
+            padding-left: 20px;
+        }
+
+        .privacy-close {
+            position: absolute;
+            top: 15px;
+            right: 18px;
+            width: 38px;
+            height: 38px;
+            border: 0;
+            border-radius: 50%;
+            background: #eef3fb;
+            color: var(--azul);
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .privacy-email {
+            display: inline-block;
+            margin-top: 8px;
+            color: var(--vermelho);
+            font-weight: 800;
+        }
+
+        .privacy-floating {
+            position: fixed;
+            left: 18px;
+            bottom: 18px;
+            z-index: 2800;
+            width: 43px;
+            height: 43px;
+            border: 0;
+            border-radius: 50%;
+            background: var(--azul);
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(0,0,0,.20);
+            display: none;
+        }
+
+        .privacy-floating.show {
+            display: grid;
+            place-items: center;
+        }
+
+        .form-privacy {
+            display: flex;
+            gap: 9px;
+            align-items: flex-start;
+            margin-top: 12px;
+            font-size: 11px;
+            color: var(--cinza);
+        }
+
+        .form-privacy input {
+            margin-top: 3px;
+            accent-color: var(--azul);
+        }
+
+        @media(max-width:760px) {
+            .privacy-notice {
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                padding: 17px;
+            }
+
+            .privacy-modal {
+                padding: 10px;
+            }
+
+            .privacy-modal-content {
+                margin: 10px auto;
+                padding: 28px 20px;
+            }
+
+            .privacy-modal-content h2 {
+                font-size: 25px;
+            }
+        }
+
+
+        /* =========================
+           SELETOR DE IDIOMA
+        ========================= */
+
+        .language-selector {
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .language-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 160px;
+            justify-content: space-between;
+            padding: 9px 14px;
+            border: 1px solid rgba(255,255,255,.55);
+            border-radius: 10px;
+            background: linear-gradient(135deg, #f0443d, #e8322d);
+            color: #fff;
+            font: inherit;
+            font-size: 12px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: .2s ease;
+            box-shadow: 0 6px 18px rgba(237,43,36,.28);
+        }
+
+        .language-button:hover,
+        .language-selector.open .language-button {
+            background: linear-gradient(135deg, #f6534c, #ef3b35);
+            transform: translateY(-1px);
+            box-shadow: 0 9px 23px rgba(237,43,36,.38);
+        }
+
+        .language-button:focus-visible {
+            outline: 3px solid rgba(255,255,255,.9);
+            outline-offset: 3px;
+        }
+
+        .language-current {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .language-flag {
+            width: 21px;
+            height: 15px;
+            object-fit: cover;
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .language-arrow {
+            font-size: 10px;
+            transition: transform .2s;
+        }
+
+        .language-selector.open .language-arrow {
+            transform: rotate(180deg);
+        }
+
+        .language-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            width: 205px;
+            background: #fff;
+            border-radius: 12px;
+            padding: 8px;
+            box-shadow: 0 16px 40px rgba(0,0,0,.24);
+            border: 1px solid #e5e7eb;
+            z-index: 3500;
+        }
+
+        .language-selector.open .language-menu {
+            display: block;
+        }
+
+        .language-option {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border: 0;
+            border-radius: 7px;
+            background: transparent;
+            color: var(--texto);
+            text-align: left;
+            font: inherit;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .language-option:hover,
+        .language-option.active {
+            background: #fff0ef;
+            color: #c91f1f;
+        }
+
+        .language-option.active {
+            font-weight: 800;
+        }
+
+        @media(max-width:1000px) {
+            .language-button {
+                min-width: 125px;
+                font-size: 11px;
+            }
+        }
+
+        @media(max-width:760px) {
+            .language-selector {
+                position: absolute;
+                right: 62px;
+                top: 15px;
+            }
+
+            .language-button {
+                min-width: auto;
+                width: 46px;
+                height: 40px;
+                padding: 7px;
+                justify-content: center;
+                border-radius: 10px;
+            }
+
+            .language-button .language-name,
+            .language-arrow {
+                display: none;
+            }
+
+            .language-menu {
+                right: -45px;
+            }
+        }
+
+
+
+        /* =====================================================
+           POLIMENTO VISUAL — HERO / HEADER / ACESSO RÁPIDO
+           ===================================================== */
+
+        .header {
+            background: rgba(3, 28, 72, 0.97);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 6px 24px rgba(2, 18, 48, .20);
+        }
+
+        .nav {
+            min-height: 78px;
+            gap: 26px;
+        }
+
+        .brand {
+            min-width: 285px;
+            gap: 12px;
+        }
+
+       .brand-mark {
+    width: 58px;
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.brand-mark img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+        .brand strong {
+            font-size: 27px;
+            letter-spacing: -.7px;
+        }
+
+        .brand small {
+            font-size: 8px;
+            letter-spacing: .65px;
+            opacity: .9;
+        }
+
+        .menu {
+            gap: 25px;
+        }
+
+        .menu a {
+            padding: 29px 0;
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255,255,255,.93);
+        }
+
+        .menu a.active::after {
+            bottom: 15px;
+            height: 3px;
+            width: 42px;
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%);
+        }
+
+        .student-button {
+            padding: 11px 18px;
+            border-color: rgba(255,255,255,.28);
+            background: rgba(255,255,255,.035);
+            transition: .25s ease;
+        }
+
+        .student-button:hover {
+            background: #fff;
+            color: var(--azul);
+            transform: translateY(-1px);
+        }
+
+        .hero {
+            height: 640px;
+            min-height: 640px;
+            isolation: isolate;
+        }
+
+        .hero-bg {
+            background-position: center center;
+            background-size: cover;
+            transform: scale(1.005);
+        }
+
+        .hero-overlay {
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(2, 25, 63, .56) 0%,
+                    rgba(2, 25, 63, .28) 32%,
+                    rgba(2, 25, 63, .04) 58%,
+                    transparent 78%
+                );
+        }
+
+        .hero-copy {
+            max-width: 650px;
+            padding: 82px 0 130px;
+        }
+
+        .eyebrow {
+            position: relative;
+            padding-bottom: 17px;
+            margin-bottom: 23px;
+            color: #fff;
+            font-size: 12px;
+            line-height: 1.45;
+            letter-spacing: 1.7px;
+            text-shadow: 0 2px 8px rgba(0,0,0,.22);
+        }
+
+        .eyebrow::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 98px;
+            height: 3px;
+            border-radius: 99px;
+            background: var(--vermelho);
+        }
+
+        .hero h1 {
+            max-width: 650px;
+            margin-bottom: 23px;
+            color: #fff;
+            font-size: clamp(44px, 5.05vw, 72px);
+            line-height: .99;
+            letter-spacing: -3px;
+            font-weight: 800;
+            text-wrap: balance;
+            text-shadow:
+                0 3px 10px rgba(0,0,0,.28),
+                0 10px 28px rgba(0,0,0,.18);
+        }
+
+        .hero h1 .hero-highlight {
+            color: #f4bc43;
+            text-shadow:
+                0 3px 9px rgba(0,0,0,.30),
+                0 8px 22px rgba(0,0,0,.15);
+        }
+
+        .hero p {
+            max-width: 500px;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,.96);
+            font-size: 16px;
+            line-height: 1.65;
+            font-weight: 500;
+            text-shadow: 0 2px 7px rgba(0,0,0,.42);
+        }
+
+        .hero-actions {
+            gap: 13px;
+        }
+
+        .btn {
+            min-height: 50px;
+            padding: 14px 24px;
+            border-radius: 999px;
+            font-size: 13px;
+            box-shadow: 0 8px 22px rgba(0,0,0,.13);
+        }
+
+        .btn-red {
+            background: linear-gradient(135deg, #f33d36, #e92520);
+            box-shadow: 0 10px 25px rgba(237,43,36,.27);
+        }
+
+        .btn-light {
+            background: rgba(255,255,255,.96);
+            color: var(--azul);
+        }
+
+        .btn-light:hover {
+            background: #fff;
+        }
+
+        .quick-wrap {
+            margin-top: -83px;
+        }
+
+        .quick-card {
+            position: relative;
+            padding: 24px 28px 27px;
+            border: 1px solid rgba(11,45,95,.07);
+            border-radius: 24px;
+            box-shadow:
+                0 20px 55px rgba(7,34,76,.16),
+                0 4px 15px rgba(7,34,76,.06);
+        }
+
+        .section-label {
+            margin-bottom: 16px;
+            font-size: 11px;
+            letter-spacing: .7px;
+        }
+
+        .quick-grid {
+            gap: 0;
+            border: 1px solid #edf0f5;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .quick-item {
+            min-height: 110px;
+            padding: 18px 20px;
+            border: 0;
+            border-right: 1px solid #edf0f5;
+            border-radius: 0;
+            background: #fff;
+        }
+
+        .quick-item:last-child {
+            border-right: 0;
+        }
+
+        .quick-item:hover {
+            border-color: #edf0f5;
+            background: #fbfcff;
+            transform: none;
+            box-shadow: inset 0 -3px 0 var(--vermelho);
+        }
+
+        .quick-icon {
+            width: 47px;
+            height: 47px;
+            border-radius: 50%;
+            font-size: 21px;
+            box-shadow: 0 4px 13px rgba(20,40,80,.06);
+        }
+
+        .quick-item strong {
+            font-size: 14px;
+            letter-spacing: -.1px;
+        }
+
+        .quick-item small {
+            font-size: 11px;
+            color: #7a8494;
+        }
+
+        @media(max-width:1000px) {
+            .brand { min-width: 240px; }
+            .menu { gap: 14px; }
+            .hero { height: 590px; min-height: 590px; }
+            .hero-copy { padding-top: 65px; }
+            .hero h1 { font-size: clamp(42px, 5.5vw, 60px); }
+        }
+
+        @media(max-width:760px) {
+            .hero {
+                height: 690px;
+                min-height: 690px;
+            }
+
+            .hero-bg {
+                background-position: 61% center;
+            }
+
+            .hero-overlay {
+                background:
+                    linear-gradient(
+                        90deg,
+                        rgba(2,22,58,.84) 0%,
+                        rgba(3,39,91,.60) 55%,
+                        rgba(3,39,91,.20) 100%
+                    );
+            }
+
+            .hero-copy {
+                max-width: 100%;
+                padding: 62px 0 145px;
+            }
+
+            .hero h1 {
+                max-width: 600px;
+                font-size: 46px;
+                line-height: 1;
+                letter-spacing: -2px;
+            }
+
+            .hero p {
+                max-width: 470px;
+                font-size: 15px;
+            }
+
+            .quick-wrap {
+                margin-top: -92px;
+            }
+
+            .quick-grid {
+                border: 0;
+                overflow: visible;
+                gap: 8px;
+            }
+
+            .quick-item,
+            .quick-item:last-child {
+                border: 1px solid var(--borda);
+                border-radius: 14px;
+            }
+        }
+
+        @media(max-width:460px) {
+            .hero h1 { font-size: 39px; }
+            .hero-copy { padding-top: 52px; }
+            .eyebrow { font-size: 10px; }
+            .hero p { font-size: 14px; }
+        }
+
+    
+        /* =====================================================
+           VERSÃO PROFISSIONAL — PROPORÇÕES DA REFERÊNCIA
+           Desktop 1600x900
+           ===================================================== */
+
+        .container {
+            width: min(1315px, calc(100% - 40px));
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+        }
+
+        .nav {
+            min-height: 83px;
+        }
+
+        .brand {
+            min-width: 285px;
+        }
+
+        .menu a {
+            padding: 31px 0;
+        }
+
+        .menu a.active::after {
+            bottom: 14px;
+        }
+
+        .hero {
+            height: 635px;
+            min-height: 635px;
+        }
+
+        .hero-bg {
+            background-position: center top;
+            background-size: cover;
+            transform: none;
+        }
+
+        .hero-copy {
+            max-width: 650px;
+            padding: 160px 0 80px;
+        }
+
+        .hero h1 {
+            max-width: 620px;
+            font-size: clamp(50px, 5.1vw, 72px);
+            line-height: .96;
+            letter-spacing: -3px;
+            margin-bottom: 22px;
+        }
+
+        .hero p {
+            max-width: 515px;
+            font-size: 16px;
+            line-height: 1.55;
+            margin-bottom: 27px;
+        }
+
+        .hero-actions {
+            gap: 14px;
+        }
+
+        .btn {
+            min-height: 48px;
+            padding: 13px 24px;
+        }
+
+        .quick-wrap {
+            margin-top: -45px;
+        }
+
+        .quick-wrap > .container {
+            width: min(1315px, calc(100% - 40px));
+        }
+
+        .quick-card {
+            width: min(1180px, 100%);
+            padding: 18px 25px 25px;
+            border-radius: 20px;
+        }
+
+        .section-label {
+            margin-bottom: 14px;
+        }
+
+        .quick-grid {
+            min-height: 98px;
+        }
+
+        .quick-item {
+            min-height: 98px;
+            padding: 16px 15px;
+        }
+
+        .quick-icon {
+            width: 46px;
+            height: 46px;
+        }
+
+        /* Mantém a próxima seção próxima da referência */
+        .about {
+            padding-top: 72px;
+        }
+
+        .about-grid {
+            gap: 55px;
+        }
+
+        @media (max-width: 1200px) {
+            .container,
+            .quick-wrap > .container {
+                width: min(1120px, calc(100% - 40px));
+            }
+
+            .brand {
+                min-width: 250px;
+            }
+
+            .menu {
+                gap: 15px;
+            }
+
+            .hero-copy {
+                padding-top: 125px;
+            }
+
+            .quick-card {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .container,
+            .quick-wrap > .container {
+                width: min(calc(100% - 28px), 1180px);
+            }
+
+            .nav {
+                min-height: 68px;
+            }
+
+            .hero {
+                height: 690px;
+                min-height: 690px;
+            }
+
+            .hero-copy {
+                padding: 62px 0 145px;
+            }
+
+            .quick-wrap {
+                margin-top: -92px;
+            }
+
+            .about {
+                padding-top: 65px;
+            }
+        }
+
+
+
+        /* =====================================================
+           CORREÇÃO FINAL DA LOGO — CEPT
+           Mantém o brasão ao lado do nome sem sobreposição.
+           ===================================================== */
+
+        .header .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-width: 285px;
+            flex-shrink: 0;
+        }
+
+        .header .brand-mark {
+            width: 58px;
+            height: 58px;
+            flex: 0 0 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            border: none;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: none;
+        }
+
+        .header .brand-mark img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .header .brand > span:last-child {
+            min-width: 0;
+        }
+
+        .header .brand strong {
+            display: block;
+            font-size: 27px;
+            line-height: 1;
+            letter-spacing: -.7px;
+            white-space: nowrap;
+        }
+
+        .header .brand small {
+            display: block;
+            margin-top: 5px;
+            font-size: 8px;
+            line-height: 1.15;
+            letter-spacing: .65px;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 1200px) {
+            .header .brand {
+                min-width: 250px;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .header .brand {
+                min-width: 0;
+                gap: 9px;
+            }
+
+            .header .brand-mark {
+                width: 42px;
+                height: 42px;
+                flex-basis: 42px;
+            }
+
+            .header .brand strong {
+                font-size: 22px;
+            }
+
+            .header .brand small {
+                display: none;
+            }
+        }
+
+
+
+        /* =====================================================
+           AJUSTE FINAL DA FOTO DO HERO
+           Mantém o projeto inteiro e mostra as bandeiras +
+           a cadeira de rodas sem alterar a composição da foto.
+           ===================================================== */
+
+        .hero {
+            height: 690px;
+            min-height: 690px;
+        }
+
+        .hero-bg {
+            background-image: url("img/image copy 6.png");
+            background-position: center center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transform: none;
+        }
+
+        /* Acesso rápido um pouco mais abaixo, sem apagar conteúdo. */
+        .quick-wrap {
+            margin-top: -48px;
+        }
+
+        @media (max-width: 760px) {
+            .hero {
+                height: 690px;
+                min-height: 690px;
+            }
+
+            .hero-bg {
+                background-size: 100% 100%;
+                background-position: center center;
+            }
+
+            .quick-wrap {
+                margin-top: -55px;
+            }
+        }
+
+    
+        
+        /* =====================================================
+           VERSÃO 2 — HERO NATURAL
+           Foto termina limpa; Acesso Rápido faz a transição.
+           ===================================================== */
+
+        .hero {
+            width: 100vw;
+            max-width: 100vw;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat !important;
+            background-size: 100% 100% !important;
+            background-position: center center !important;
+        }
+
+        .hero-bg::after {
+            content: none !important;
+            display: none !important;
+        }
+
+    
+        /* =====================================================
+           LOGOS DOS SERVIÇOS
+           ADIÇÃO — somente visual.
+           ===================================================== */
+
+        .service-logo {
+            width: 100%;
+            height: 135px;
+            object-fit: contain;
+            object-position: center;
+            margin: 2px 0 16px;
+        }
+
+        .service-card .service-number {
+            position: relative;
+            z-index: 2;
+        }
+
+        @media(max-width:760px) {
+            .service-logo {
+                height: 125px;
+                margin-bottom: 14px;
+            }
+        }
+
+        @media(max-width:460px) {
+            .service-logo {
+                height: 150px;
+            }
+        }
+
+    </style>
+
+<style>
+/* =========================================================
+   OPÇÃO B — CORREÇÃO VISUAL
+   A imagem fica como protagonista, sem aquele "caixote"
+   branco enorme ao redor.
+   ========================================================= */
+
+#alunos {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 82% 45%, rgba(11,77,162,.07), transparent 32%),
+        linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+}
+
+#alunos .student-grid {
+    grid-template-columns: .88fr 1.12fr;
+    gap: 70px;
+}
+
+/* Remove o painel branco gigante e cria uma moldura elegante */
+#alunos .students-image {
+    position: relative;
+    width: min(100%, 520px);
+    min-height: 0;
+    height: auto;
+    margin-left: auto;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid rgba(6,43,112,.10);
+    border-radius: 26px;
+
+    box-shadow:
+        0 22px 55px rgba(6,43,112,.13),
+        0 5px 16px rgba(6,43,112,.07);
+}
+
+#alunos .students-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 34px;
+    width: 78px;
+    height: 4px;
+    border-radius: 0 0 8px 8px;
+    background: #ed2b24;
+    z-index: 3;
+}
+
+#alunos .students-image::after {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    border: 1px solid rgba(255,255,255,.55);
+    border-radius: 19px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+#alunos .students-image img {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 560px;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 19px;
+    box-shadow: none;
+}
+
+/* Pequeno detalhe azul tecnológico */
+#alunos .students-image {
+    isolation: isolate;
+}
+
+#alunos .students-image > img {
+    background: #f4f7fb;
+}
+
+/* Desktop: deixa a foto mais próxima do texto */
+@media (min-width: 1101px) {
+    #alunos .students-image {
+        transform: translateY(2px);
+    }
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    #alunos .student-grid {
+        gap: 45px;
+    }
+
+    #alunos .students-image {
+        width: min(100%, 500px);
+        margin: 0 auto;
+    }
+}
+
+/* Celular */
+@media (max-width: 760px) {
+    #alunos .student-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    #alunos .students-image {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 8px;
+        border-radius: 22px;
+    }
+
+    #alunos .students-image::after {
+        inset: 8px;
+        border-radius: 16px;
+    }
+
+    #alunos .students-image img {
+        border-radius: 16px;
+        max-height: none;
+    }
+
+    #alunos .students-image::before {
+        left: 26px;
+        width: 65px;
+    }
+}
+</style>
+
+</head>
+<body>
+<!--
+        SEGURANÇA:
+        Este arquivo é uma página pública.
+        Nenhuma senha, nota, CPF, matrícula ou dado acadêmico deve ser
+        colocado aqui. Dados restritos deverão ser obtidos pelo backend
+        autenticado quando a área do aluno/professor for implementada.
+    -->
+<!-- =====================================================
+     HEADER
+===================================================== -->
+<header class="header">
+<div class="container nav">
+<a class="brand" href="#inicio">
+
+    <span class="brand-mark">
+        <img src="img/LOGO.png" alt="Brasão CEPT">
+    </span>
+
+    <span>
+        <strong data-i18n="ceptName">CEPT</strong>
+
+        <small data-i18n="brandTag">
+            CENTRO EDUCACIONAL<br/>
+            PROFISSIONAL E TECNOLÓGICO
+        </small>
+    </span>
+
+</a>
+
+<button class="menu-toggle" id="menuToggle">
+
+            ☰
+
+        </button>
+<nav class="menu" id="menu">
+<a class="active" data-i18n="navHome" href="#inicio">
+
+                Início
+
+            </a>
+<a data-i18n="navSchool" href="#escola">
+                A Escola
+            </a>
+<a data-i18n="navServices" href="#servicos">
+                Serviços
+            </a>
+<a data-i18n="navStudents" href="#alunos">
+                Alunos
+            </a>
+<a data-i18n="navNews" href="#noticias">
+                Notícias
+            </a>
+<a data-i18n="navGallery" href="#galeria">
+                Galeria
+            </a>
+<a data-i18n="footerContact" href="#contato">
+                Contato
+            </a>
+</nav>
+<a class="student-button" data-i18n="studentArea" href="#area-aluno">
+
+            🔒 Área do aluno
+
+        </a>
+<!-- SELETOR DE IDIOMA -->
+<div class="language-selector" id="languageSelector">
+<button aria-expanded="false" aria-haspopup="true" aria-label="Selecionar idioma" class="language-button" id="languageButton" type="button">
+<span class="language-current">
+<span id="languageFlag">🇧🇷</span>
+<span class="language-name" id="languageName">Português</span>
+</span>
+<span class="language-arrow">⌄</span>
+</button>
+<div class="language-menu" id="languageMenu">
+<button class="language-option active" data-lang="pt" type="button">
+                    🇧🇷 <span data-i18n="langPortuguese">Português Brasileiro</span>
+</button>
+<button class="language-option" data-lang="en" type="button">
+                    🇺🇸 <span data-i18n="langEnglish">English</span>
+</button>
+<button class="language-option" data-lang="zh" type="button">
+                    🇨🇳 <span data-i18n="langChinese">简体中文</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- =====================================================
+     HERO
+===================================================== -->
+<section class="hero" id="inicio">
+<div class="hero-bg"></div>
+<div class="hero-overlay"></div>
+<div class="container hero-content">
+<div class="hero-copy">
+<span class="eyebrow" data-i18n="heroEyebrow">
+
+                CENTRO EDUCACIONAL
+                PROFISSIONAL E TECNOLÓGICO
+
+            </span>
+<h1 data-i18n="heroTitle">
+
+                Educação que transforma,
+                <br/>
+<span class="hero-highlight" data-i18n="heroTitle">futuro que inspira!</span>
+</h1>
+<p data-i18n="heroText">
+
+                No CEPT, formamos cidadãos
+                preparados para os desafios
+                de hoje e de amanhã,
+                com conhecimento,
+                valores e tecnologia.
+
+            </p>
+<div class="hero-actions">
+<a class="btn btn-red" data-i18n="heroButtonSchool" href="#escola">
+
+                    Conheça nossa escola
+                    →
+                    
+                </a>
+<a class="btn btn-light" data-i18n="heroButtonQuick" href="#servicos">
+
+                    Acessos rápidos
+
+                </a>
+</div>
+</div>
+</div>
+</section>
+<!-- =====================================================
+     ACESSO RÁPIDO
+===================================================== -->
+<section class="quick-wrap" id="area-aluno">
+<div class="container">
+<div class="quick-card">
+<div class="section-label" data-i18n="quickLabel">
+
+                ACESSO RÁPIDO
+
+            </div>
+<div class="quick-grid">
+<a class="quick-item" href="#prepara">
+<span class="quick-icon blue">
+
+                        🎓
+
+                    </span>
+<span>
+<strong data-i18n="prepara">Prepara CEPT
+                        </strong>
+<small data-i18n="access">Acessar →
+                        </small>
+</span>
+</a>
+<a class="quick-item" href="#neerce">
+<span class="quick-icon green">
+
+                        👥
+
+                    </span>
+<span>
+<strong data-i18n="neerce">NEERCE
+                        </strong>
+<small data-i18n="access">
+                            Acessar →
+                        </small>
+</span>
+</a>
+<a class="quick-item" href="#coc">
+<span class="quick-icon orange">
+
+                        👨‍👩‍👧
+
+                    </span>
+<span>
+<strong data-i18n="coc">COC
+                        </strong>
+<small data-i18n="classCouncil">Conselho de Classe
+                            <br/>
+                            Acessar →
+                        </small>
+</span>
+</a>
+<a class="quick-item" href="#adm">
+<span class="quick-icon purple">
+
+                        ⚙
+
+                    </span>
+<span>
+<strong data-i18n="adm">ADM CEPT
+                        </strong>
+<small data-i18n="access">
+                            Acessar →
+                        </small>
+</span>
+</a>
+<a class="quick-item" href="#avalia">
+<span class="quick-icon red">
+
+                        ✓
+
+                    </span>
+<span>
+<strong data-i18n="avalia">Avalia CEPT
+                        </strong>
+<small data-i18n="access">
+                            Acessar →
+                        </small>
+</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- =====================================================
+     SOBRE A ESCOLA
+===================================================== -->
+<section class="section about" id="escola">
+<div class="container about-grid">
+<div class="about-image">
+<img alt="Alunas do CEPT" src="img/image copy 2.png"/>
+<div class="image-badge">
+<strong data-i18n="ceptName">
+                    CEPT
+                </strong>
+<span data-i18n="aboutTagline">
+                    Educação,
+                    tecnologia e futuro
+                </span>
+</div>
+</div>
+<div class="about-copy">
+
+<span class="eyebrow vinho-text" data-i18n="aboutLabel">
+    SOBRE O CEPT
+</span>
+
+<h2 data-i18n="aboutTitle">
+
+                Uma escola
+                preparada
+                para o futuro.
+
+            </h2>
+<p data-i18n="aboutText1">
+
+                O Centro Educacional
+                Profissional e Tecnológico
+                busca unir educação de
+                qualidade, formação humana,
+                inovação e preparação
+                profissional.
+
+            </p>
+<p data-i18n="aboutText2">
+
+                Nosso ambiente valoriza
+                o aluno, estimula a
+                criatividade e cria
+                oportunidades para que
+                cada estudante desenvolva
+                seu potencial.
+
+            </p>
+<div class="values">
+<div>
+<span>♢</span>
+<b data-i18n="valueQuality">
+                        Educação de qualidade
+                    </b>
+</div>
+<div>
+<span>♡</span>
+<b data-i18n="valueHuman">
+                        Formação humana
+                    </b>
+</div>
+<div>
+<span>▣</span>
+<b data-i18n="valueInnovation">
+                        Inovação e tecnologia
+                    </b>
+</div>
+<div>
+<span>♧</span>
+<b data-i18n="valueFuture">
+                        Compromisso com o futuro
+                    </b>
+</div>
+</div>
+<a class="btn btn-outline" data-i18n="learnMore" href="#contato">
+
+                Saiba mais →
+
+            </a>
+</div>
+</div>
+</section>
+<!-- =====================================================
+     SERVIÇOS
+===================================================== -->
+<section class="section services" id="servicos">
+<div class="container">
+<div class="section-heading">
+<div>
+<span class="eyebrow blue-text" data-i18n="servicesLabel">
+
+                    NOSSOS SERVIÇOS
+
+                </span>
+<h2 data-i18n="servicesTitle">
+
+                    Um portal para
+                    facilitar sua rotina
+
+                </h2>
+</div>
+<p data-i18n="servicesText">
+
+                Encontre rapidamente
+                os principais recursos
+                utilizados pela
+                comunidade escolar.
+
+            </p>
+</div>
+<div class="service-grid">
+<article class="service-card" id="prepara">
+<div class="service-number">
+                    01
+                </div>
+                <img class="service-logo" src="img/servico-prepara.png" alt="Prepara CEPT"/>
+<h3 data-i18n="prepara">
+                    Prepara CEPT
+                </h3>
+<p data-i18n="preparaDesc">
+                    Ferramentas e conteúdos
+                    para apoiar a preparação
+                    acadêmica.
+                </p>
+<a data-i18n="enter" href="#">Entrar →
+                </a>
+</article>
+<article class="service-card" id="neerce">
+<div class="service-number">
+                    02
+                </div>
+                <img class="service-logo" src="img/servico-neerce.png" alt="NEERCE"/>
+<h3 data-i18n="neerce">
+                    NEERCE
+                </h3>
+<p data-i18n="neerceDesc">
+                    Espaço voltado ao
+                    acompanhamento e apoio
+                    à comunidade escolar.
+                </p>
+<a data-i18n="enter" href="#">
+                    Entrar →
+                </a>
+</article>
+<article class="service-card" id="coc">
+<div class="service-number">
+                    03
+                </div>
+                <img class="service-logo" src="img/servico-conselho.png" alt="Conselho de Classe"/>
+<h3 data-i18n="classCouncil">
+                    Conselho de Classe
+                </h3>
+<p data-i18n="councilDesc">
+                    Informações e recursos
+                    para acompanhamento
+                    pedagógico.
+                </p>
+<a data-i18n="enter" href="#">
+                    Entrar →
+                </a>
+</article>
+<article class="service-card" id="adm">
+<div class="service-number">
+                    04
+                </div>
+                <img class="service-logo" src="img/servico-adm.png" alt="ADM CEPT"/>
+<h3 data-i18n="adm">
+                    ADM CEPT
+                </h3>
+<p data-i18n="admDesc">
+                    Área administrativa
+                    para processos e
+                    gestão escolar.
+                </p>
+<a data-i18n="enter" href="#">
+                    Entrar →
+                </a>
+</article>
+<article class="service-card" id="avalia">
+<div class="service-number">
+                    05
+                </div>
+                <img class="service-logo" src="img/servico-avalia.png" alt="Avalia CEPT"/>
+<h3 data-i18n="avalia">
+                    Avalia CEPT
+                </h3>
+<p data-i18n="avaliaDesc">
+                    Avaliações e
+                    acompanhamento do
+                    desenvolvimento
+                    dos alunos.
+                </p>
+<a data-i18n="enter" href="#">
+                    Entrar →
+                </a>
+</article>
+</div>
+</div>
+</section>
+<!-- =====================================================
+     ALUNOS
+===================================================== -->
+<section class="section students" id="alunos">
+<div class="container student-grid">
+<div>
+<span class="eyebrow red-text" data-i18n="communityLabel">
+
+                NOSSA COMUNIDADE
+
+            </span>
+<h2 data-i18n="communityTitle">
+
+                Todos têm espaço
+                para aprender,
+                crescer e participar.
+
+            </h2>
+<p data-i18n="communityText">
+
+                O CEPT acredita em uma
+                educação inclusiva,
+                acolhedora e conectada
+                com a realidade dos
+                estudantes.
+
+            </p>
+<ul class="check-list">
+<li data-i18n="community1">
+                    Ambiente acolhedor
+                    e inclusivo
+                </li>
+<li data-i18n="community2">
+                    Projetos educacionais
+                    e tecnológicos
+                </li>
+<li data-i18n="community3">
+                    Formação para o
+                    mundo profissional
+                </li>
+<li data-i18n="community4">
+                    Valorização da
+                    diversidade
+                </li>
+</ul>
+</div>
+<div class="students-image">
+<img alt="Alunos do CEPT" src="img/FAMILIA CEPT.png"/>
+</div>
+</div>
+</section>
+<!-- =====================================================
+     NOTÍCIAS
+===================================================== -->
+<section class="section news" id="noticias">
+<div class="container">
+<div class="section-heading">
+<div>
+
+<span class="eyebrow vinho-text" data-i18n="newsLabel">
+    ACONTECE NO CEPT
+</span>
+
+<h2 data-i18n="newsTitle">
+                    Notícias e novidades
+                </h2>
+</div>
+<a class="text-link" data-i18n="seeAll" href="#noticias">
+
+                Ver todas →
+
+            </a>
+</div>
+<div class="news-grid">
+<article class="news-card">
+<img alt="Escola CEPT" src="img/DIRETO DA CHINA.png"/>
+<div class="news-body">
+<small data-i18n="newsDate1">
+                        SEMINÁRIO • 10 DE JULHO DE 2025
+                    </small>
+<h3 data-i18n="newsTitle1">
+                        Nossa equipe participa, em Pequim, do Seminário de Treinamento para Professores de Chinês no Brasil, uma iniciativa que fortalece a ponte entre culturas por meio da educação.
+                    </h3>
+<p data-i18n="newsText1">
+                        Nossa equipe participa, em Pequim, do Seminário de Treinamento para Professores de Chinês no Brasil, uma iniciativa que fortalece a ponte entre culturas por meio da educação.
+                    </p>
+<a data-i18n="readNews" href="#">
+                        Ler notícia →
+                    </a>
+</div>
+</article>
+<article class="news-card">
+<img alt="Alunas CEPT" src="img/DIA NACIONAL DA CHINA.png"/>
+<div class="news-body">
+<small data-i18n="newsDate2">
+                        CELEBRAÇÃO • 1 DE OUTUBRO DE 2025
+                    </small>
+<h3 data-i18n="newsTitle2">
+                        Hoje celebramos o Dia Nacional da China (1º de outubro)!
+                        Um momento de orgulho, história e união, que fortalece ainda mais os laços culturais e de amizade entre nossos povos. 🇨🇳❤️
+                    </h3>
+<p data-i18n="newsText2">
+                        Projetos que aproximam
+                        tecnologia, criatividade
+                        e educação.
+                    </p>
+<a data-i18n="readNews" href="#">
+                        Ler notícia →
+                    </a>
+</div>
+</article>
+<article class="news-card">
+<img alt="Alunos CEPT" src="img/image copy 7.png"/>
+<div class="news-body">
+<small data-i18n="newsDate3">
+                        EVENTOS • 10 MAI
+                    </small>
+<h3 data-i18n="newsTitle3">
+                        Participação e
+                        protagonismo dos alunos
+                    </h3>
+<p data-i18n="newsText3">
+                        Ontem, dia 24, os alunos do CEPT Leonel de Moura Brizola participaram da Olimpíada Brasileira de Robótica (OBR) e conquistaram o 3º lugar! 🤖👏
+                    </p>
+<a data-i18n="readNews" href="#">
+                        Ler notícia →
+                    </a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- =====================================================
+     GALERIA
+===================================================== -->
+<section class="section gallery" id="galeria">
+<div class="container">
+<div class="section-heading">
+<div>
+<span class="eyebrow vinho-text" data-i18n="galleryLabel">
+                    GALERIA
+                </span>
+<h2 data-i18n="galleryTitle">
+                    Momentos do CEPT
+                </h2>
+</div>
+<p data-i18n="galleryText">
+                Um pouco do nosso espaço
+                e da nossa comunidade.
+            </p>
+</div>
+<div class="gallery-grid">
+    <figure class="gallery-item">
+        <img src="img/image copy 8.png" alt="Galeria do CEPT — imagem 1">
+        <div class="gallery-caption">
+            <span>Galeria</span>
+            <strong>Momentos do CEPT</strong>
+        </div>
+    </figure>
+
+    <figure class="gallery-item">
+        <img src="img/image copy 9.png" alt="Galeria do CEPT — imagem 2">
+        <div class="gallery-caption">
+            <span>Galeria</span>
+            <strong>Momentos do CEPT</strong>
+        </div>
+    </figure>
+
+    <figure class="gallery-item">
+        <img src="img/image copy 10.png" alt="Galeria do CEPT — imagem 3">
+        <div class="gallery-caption">
+            <span>Galeria</span>
+            <strong>Momentos do CEPT</strong>
+        </div>
+    </figure>
+</div>
+</div>
+</section>
+<!-- =====================================================
+     CONTATO
+===================================================== -->
+<section class="section contact" id="contato">
+<div class="container contact-box">
+<div>
+<span class="eyebrow" data-i18n="contactLabel">
+                FALE CONOSCO
+            </span>
+<h2 data-i18n="contactTitle">
+                Vamos construir
+                o futuro juntos.
+            </h2>
+<p data-i18n="contactText">
+
+                Entre em contato com o
+                CEPT para tirar dúvidas,
+                conhecer a escola ou saber
+                mais sobre nossos serviços.
+
+            </p>
+</div>
+<div class="contact-items">
+<a href="tel:+5521972274766">
+<span>
+                    ☎
+                </span>
+<div>
+<small data-i18n="phoneLabel">
+                        Telefone
+                    </small>
+<strong>
+                        (21) 97227-4766
+                    </strong>
+</div>
+</a>
+<a href="mailto:contato@cept.edu.br">
+<span>
+                    ✉
+                </span>
+<div>
+<small data-i18n="emailLabel">
+                        E-mail
+                    </small>
+<strong>
+                        contato@cept.edu.br
+                    </strong>
+</div>
+</a>
+<a href="https://www.google.com.br/maps/place/CEPT+Leonel+de+Moura+Brizola/@-22.9571017,-42.9531983,6a,72.1y,227.23h,96.41t/data=!3m7!1e1!3m5!1sY0cxruSKrC534utd-2dXFw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-6.413345592629113%26panoid%3DY0cxruSKrC534utd-2dXFw%26yaw%3D227.23389272690324!7i16384!8i8192!4m16!1m8!3m7!1s0x998f449cf2864f:0x246ed294b62e2ac6!2sCEPT+Leonel+de+Moura+Brizola!8m2!3d-22.9570238!4d-42.9533692!10e5!16s%2Fg%2F11j4tzh4vc!3m6!1s0x998f449cf2864f:0x246ed294b62e2ac6!8m2!3d-22.9570238!4d-42.9533692!10e5!16s%2Fg%2F11j4tzh4vc?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D"
+target="_blank"
+rel="noopener noreferrer">
+<span></span>
+
+
+<div>
+<small data-i18n="addressLabel">
+                        Endereço
+                    </small>
+
+
+<strong data-i18n="addressValue">
+                        Localização da Escola
+                    </strong>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer class="footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<a class="brand" href="#inicio">
+<span class="brand-mark">
+                    C
+                </span>
+<span>
+<strong data-i18n="ceptName">
+                        CEPT
+                    </strong>
+<small data-i18n="brandTag">
+
+                        CENTRO EDUCACIONAL<br/>
+                        PROFISSIONAL E TECNOLÓGICO
+
+                    </small>
+</span>
+</a>
+<p data-i18n="footerDescription">
+
+                Educação, tecnologia
+                e formação para o futuro.
+
+            </p>
+</div>
+<div>
+<h4 data-i18n="footerInstitutional">
+                Institucional
+            </h4>
+<a data-i18n="navSchool" href="#escola">
+                A Escola
+            </a>
+<a data-i18n="navNews" href="#noticias">
+                Notícias
+            </a>
+<a data-i18n="navGallery" href="#galeria">
+                Galeria
+            </a>
+</div>
+<div>
+<h4 data-i18n="footerSupport">
+                Atendimento
+            </h4>
+<a data-i18n="footerContact" href="#contato">
+                Contato
+            </a>
+<a data-i18n="footerStudent" href="#area-aluno">
+                Área do aluno
+            </a>
+<a data-i18n="privacyLink" href="javascript:void(0)" onclick="openPrivacyModal()">
+                Privacidade
+            </a>
+<a data-i18n="privacyChannel" href="mailto:privacidade@cept.edu.br">
+                Canal de privacidade
+            </a>
+</div>
+<div>
+<h4 data-i18n="footerSocial">
+                Redes sociais
+            </h4>
+<div class="socials">
+                <a href="https://www.instagram.com/cept.leonel/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do CEPT" title="Instagram do CEPT">IG</a>
+<a href="#">
+                    ◎
+                </a>
+<a href="#">
+                    f
+                </a>
+<a href="#">
+                    ▶
+                </a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">
+
+            ©
+            <span id="year"></span>
+            CEPT —
+            Todos os direitos reservados.
+
+        </div>
+</div>
+</footer>
+<!-- =====================================================
+     ASSISTENTE CEPT — "PRECISA DE AJUDA?"
+===================================================== -->
+<div class="help-assistant" id="helpAssistant">
+    <div class="help-panel" id="helpPanel" aria-hidden="true">
+        <div class="help-header">
+            <strong>Como podemos ajudar?</strong>
+            <span>Escolha uma opção. Se precisar, você poderá enviar a solicitação diretamente ao CEPT.</span>
+        </div>
+
+        <div class="help-questions" id="helpQuestions">
+            <button class="help-question" type="button" data-help-question="documentos">
+                📄 Preciso de informações sobre documentos
+            </button>
+            <button class="help-question" type="button" data-help-question="matricula">
+                🎓 Tenho uma dúvida sobre matrícula
+            </button>
+            <button class="help-question" type="button" data-help-question="aluno">
+                👤 Assunto sobre o aluno
+            </button>
+            <button class="help-question" type="button" data-help-question="atendimento">
+                💬 Quero falar com a secretaria
+            </button>
+            <button class="help-question" type="button" data-help-question="outro">
+                ❓ Minha dúvida é outra
+            </button>
+        </div>
+
+        <div class="help-answer" id="helpAnswer">
+            <strong id="helpAnswerTitle">Atendimento CEPT</strong>
+            <p id="helpAnswerText">Se não encontrou o que precisa, envie sua solicitação diretamente ao CEPT.</p>
+            <div class="help-actions">
+                <a class="help-whatsapp" id="helpWhatsapp" href="https://wa.me/5521972274766" target="_blank" rel="noopener noreferrer">
+                    💬 WhatsApp
+                </a>
+                <a class="help-email" href="mailto:contato@cept.edu.br">
+                    ✉ E-mail
+                </a>
+            </div>
+        </div>
+
+        <div class="student-triage" id="studentTriage">
+            <button class="triage-back" id="triageBack" type="button">← Voltar</button>
+            <strong class="triage-title">Assunto sobre o aluno</strong>
+            <span class="triage-subtitle">Selecione o assunto. A prioridade é definida pelo tipo de solicitação para ajudar a secretaria a organizar o atendimento.</span>
+
+            <div class="triage-options">
+                <button class="triage-option" type="button" data-triage="seguranca">
+                    🔴 Situação envolvendo segurança ou bem-estar
+                    <span class="triage-priority priority-high">ALTA</span>
+                </button>
+                <button class="triage-option" type="button" data-triage="acontecimento">
+                    🟠 Acontecimento importante com o aluno
+                    <span class="triage-priority priority-attention">ATENÇÃO</span>
+                </button>
+                <button class="triage-option" type="button" data-triage="notas">
+                    🟡 Notas e desempenho
+                    <span class="triage-priority priority-normal">NORMAL</span>
+                </button>
+                <button class="triage-option" type="button" data-triage="frequencia">
+                    🟡 Frequência e faltas
+                    <span class="triage-priority priority-normal">NORMAL</span>
+                </button>
+                <button class="triage-option" type="button" data-triage="outroAluno">
+                    🟢 Outro assunto sobre o aluno
+                    <span class="triage-priority priority-low">NORMAL</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="triage-form" id="triageForm">
+            <button class="triage-back" id="formBack" type="button">← Voltar</button>
+
+            <div class="triage-selected">
+                <strong id="triageSelectedTitle">Assunto</strong>
+                <span id="triageSelectedPriority" class="priority-normal">NORMAL</span>
+            </div>
+
+            <div class="triage-fields">
+                <label>
+                    Nome do aluno
+                    <input id="triageStudentName" type="text" maxlength="100" placeholder="Nome do aluno">
+                </label>
+
+                <label>
+                    Turma
+                    <input id="triageClass" type="text" maxlength="40" placeholder="Ex.: 8º ano A">
+                </label>
+
+                <label>
+                    O que aconteceu?
+                    <textarea id="triageDescription" maxlength="700" placeholder="Explique brevemente o que precisa ser resolvido."></textarea>
+                </label>
+            </div>
+
+            <p class="triage-note">A mensagem será preparada para o WhatsApp do CEPT. Evite informar senhas ou dados desnecessários.</p>
+
+            <button class="triage-submit" id="triageSubmit" type="button">
+                💬 Enviar solicitação pelo WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <button aria-controls="helpPanel" aria-expanded="false" aria-label="Abrir ajuda do CEPT" class="help-button" id="helpButton" type="button">
+        <span class="help-button-icon">?</span>
+        Precisa de ajuda?
+    </button>
+</div>
+
+<!-- =====================================================
+     AVISO DE PRIVACIDADE / COOKIES
+===================================================== -->
+<div aria-label="Aviso de privacidade" class="privacy-notice" id="privacyNotice" role="dialog">
+<h3 data-i18n="privacyNoticeTitle">🔒 Privacidade e proteção de dados</h3>
+<p><span data-i18n="privacyNoticeText">O CEPT valoriza a sua privacidade. Este site poderá tratar dados pessoais quando você utilizar seus canais de atendimento. Consulte a</span> <button class="privacy-link" data-i18n="privacyPolicyButton" onclick="openPrivacyModal()" type="button">Política de Privacidade</button> <span data-i18n="privacyContinue">para entender como os dados são tratados.</span></p>
+<div class="privacy-notice-actions">
+<button class="privacy-accept" data-i18n="privacyAccept" onclick="acceptPrivacy()" type="button">
+            Entendi
+        </button>
+<button class="privacy-settings" data-i18n="privacySettings" onclick="openPrivacyModal()" type="button">
+            Ver política
+        </button>
+</div>
+</div>
+<button aria-label="Abrir informações de privacidade" class="privacy-floating" id="privacyFloating" onclick="openPrivacyModal()" title="Privacidade" type="button">
+    🔒
+</button>
+<!-- =====================================================
+     POLÍTICA DE PRIVACIDADE
+===================================================== -->
+<div aria-labelledby="privacyTitle" aria-modal="true" class="privacy-modal" id="privacyModal" role="dialog">
+<div class="privacy-modal-content">
+<button aria-label="Fechar política de privacidade" class="privacy-close" onclick="closePrivacyModal()" type="button">
+            ×
+        </button>
+<span class="eyebrow blue-text" data-i18n="privacyEyebrow">PRIVACIDADE E PROTEÇÃO DE DADOS</span>
+<h2 data-i18n="privacyTitle" id="privacyTitle">
+            Política de Privacidade
+        </h2>
+<p data-i18n="privacyIntro">
+            Esta página apresenta, de forma simples, como o portal do CEPT
+            pretende tratar dados pessoais. As informações institucionais,
+            contatos oficiais e prazos de retenção devem ser confirmados pela
+            escola antes da publicação definitiva.
+        </p>
+<h3 data-i18n="privacyH1">1. Quais dados podem ser tratados?</h3>
+<p data-i18n="privacyP1">
+            Dependendo do serviço utilizado, poderão ser tratados dados
+            fornecidos voluntariamente pelo visitante, como nome, e-mail,
+            telefone e informações necessárias para responder a uma solicitação.
+        </p>
+<h3 data-i18n="privacyH2">2. Para que os dados são utilizados?</h3>
+<p data-i18n="privacyP2">
+            Os dados poderão ser utilizados para atendimento, comunicação com
+            a comunidade escolar, resposta a solicitações e execução dos
+            serviços disponibilizados pelo CEPT.
+        </p>
+<h3 data-i18n="privacyH3">3. Minimização de dados</h3>
+<p data-i18n="privacyP3">
+            O portal deve solicitar somente as informações necessárias para
+            cada finalidade. Dados de alunos, professores ou responsáveis não
+            devem ser publicados em páginas públicas.
+        </p>
+<h3 data-i18n="privacyH4">4. Área de alunos e professores</h3>
+<p data-i18n="privacyP4">
+            Informações acadêmicas, notas, documentos e demais dados restritos
+            deverão ser disponibilizados somente após autenticação e autorização
+            adequadas. Essa proteção será implementada no backend do sistema,
+            e não apenas no HTML.
+        </p>
+<h3 data-i18n="privacyH5">5. Segurança</h3>
+<p data-i18n="privacyP5">
+            O sistema deverá adotar medidas técnicas e administrativas
+            proporcionais aos riscos, incluindo HTTPS, controle de acesso,
+            autenticação, armazenamento seguro de senhas, validação de dados,
+            atualizações de dependências e proteção do banco de dados.
+        </p>
+<h3 data-i18n="privacyH6">6. Cookies</h3>
+<p data-i18n="privacyP6">
+            Este portal não deve utilizar cookies não essenciais sem a devida
+            configuração e informação ao visitante. Caso futuramente sejam
+            utilizados cookies de análise, publicidade ou outras finalidades
+            não essenciais, o mecanismo de consentimento deverá ser atualizado
+            para refletir essa utilização.
+        </p>
+<h3 data-i18n="privacyH7">7. Direitos do titular</h3>
+<p data-i18n="privacyP7">
+            Nos termos da legislação aplicável, o titular pode exercer direitos
+            relacionados aos seus dados pessoais, observadas as hipóteses e
+            limitações previstas em lei. O canal oficial da escola deverá ser
+            utilizado para receber e tratar essas solicitações.
+        </p>
+<h3 data-i18n="privacyH8">8. Canal de privacidade</h3>
+<p data-i18n="privacyP8">
+            Para solicitações relacionadas à privacidade, utilize o canal
+            oficial definido pelo CEPT:
+        </p>
+<a class="privacy-email" href="mailto:privacidade@cept.edu.br">
+            privacidade@cept.edu.br
+        </a>
+<h3 data-i18n="privacyH9">9. Atualizações</h3>
+<p data-i18n="privacyP9">
+            Esta política poderá ser atualizada quando houver alteração nas
+            funcionalidades do portal ou nas práticas de tratamento de dados.
+        </p>
+<h3 data-i18n="privacyH10">10. Atenção antes da publicação</h3>
+<p data-i18n="privacyP10">
+            Os dados de contato, responsável pelo tratamento, finalidades
+            específicas, bases legais, prazos de retenção e demais informações
+            institucionais devem ser preenchidos e validados pelo CEPT antes
+            de o site entrar em produção.
+        </p>
+</div>
+</div>
+<!-- BOTÃO VOLTAR AO TOPO -->
+<button class="back-top" id="backTop">
+
+    ↑
+
+</button>
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+<script>
+
+    /* =====================================================
+       ASSISTENTE CEPT — "PRECISA DE AJUDA?"
+       ADIÇÃO — triagem de assuntos sobre o aluno.
+       ===================================================== */
+
+    const helpButton = document.getElementById("helpButton");
+    const helpPanel = document.getElementById("helpPanel");
+    const helpQuestions = document.getElementById("helpQuestions");
+    const helpAnswer = document.getElementById("helpAnswer");
+    const helpAnswerTitle = document.getElementById("helpAnswerTitle");
+    const helpAnswerText = document.getElementById("helpAnswerText");
+    const helpWhatsapp = document.getElementById("helpWhatsapp");
+    const helpAssistant = document.getElementById("helpAssistant");
+
+    const studentTriage = document.getElementById("studentTriage");
+    const triageForm = document.getElementById("triageForm");
+    const triageBack = document.getElementById("triageBack");
+    const formBack = document.getElementById("formBack");
+    const triageSelectedTitle = document.getElementById("triageSelectedTitle");
+    const triageSelectedPriority = document.getElementById("triageSelectedPriority");
+    const triageStudentName = document.getElementById("triageStudentName");
+    const triageClass = document.getElementById("triageClass");
+    const triageDescription = document.getElementById("triageDescription");
+    const triageSubmit = document.getElementById("triageSubmit");
+
+    const helpResponses = {
+        documentos: {
+            title: "Informações sobre documentos",
+            text: "Para evitar filas, você pode enviar sua dúvida diretamente ao atendimento do CEPT e explicar qual documento precisa."
+        },
+        matricula: {
+            title: "Dúvida sobre matrícula",
+            text: "Informe sua dúvida e, se necessário, os dados que a secretaria solicitar. O atendimento poderá orientar os próximos passos."
+        },
+        atendimento: {
+            title: "Falar com a secretaria",
+            text: "Você pode enviar sua solicitação pelos canais abaixo. Assim, a equipe poderá analisar o pedido antes do atendimento presencial."
+        },
+        outro: {
+            title: "Outra dúvida",
+            text: "Descreva brevemente o que você precisa. A equipe poderá encaminhar sua solicitação para o setor responsável."
+        }
+    };
+
+    const triageResponses = {
+        seguranca: {
+            title: "Situação envolvendo segurança ou bem-estar",
+            priority: "ALTA",
+            priorityClass: "priority-high"
+        },
+        acontecimento: {
+            title: "Acontecimento importante com o aluno",
+            priority: "ATENÇÃO",
+            priorityClass: "priority-attention"
+        },
+        notas: {
+            title: "Notas e desempenho",
+            priority: "NORMAL",
+            priorityClass: "priority-normal"
+        },
+        frequencia: {
+            title: "Frequência e faltas",
+            priority: "NORMAL",
+            priorityClass: "priority-normal"
+        },
+        outroAluno: {
+            title: "Outro assunto sobre o aluno",
+            priority: "NORMAL",
+            priorityClass: "priority-low"
+        }
+    };
+
+    function openHelp() {
+        helpPanel.classList.add("show");
+        helpPanel.setAttribute("aria-hidden", "false");
+        helpButton.setAttribute("aria-expanded", "true");
+    }
+
+    function closeHelp() {
+        helpPanel.classList.remove("show");
+        helpPanel.setAttribute("aria-hidden", "true");
+        helpButton.setAttribute("aria-expanded", "false");
+        resetStudentTriage();
+    }
+
+    function resetStudentTriage() {
+        helpQuestions.style.display = "grid";
+        helpAnswer.classList.remove("show");
+        studentTriage.classList.remove("show");
+        triageForm.classList.remove("show");
+        triageStudentName.value = "";
+        triageClass.value = "";
+        triageDescription.value = "";
+    }
+
+    function showStudentTriage() {
+        helpQuestions.style.display = "none";
+        helpAnswer.classList.remove("show");
+        studentTriage.classList.add("show");
+        triageForm.classList.remove("show");
+    }
+
+    function showStudentForm(type) {
+        const response = triageResponses[type];
+        if (!response) return;
+
+        studentTriage.classList.remove("show");
+        triageForm.classList.add("show");
+
+        triageSelectedTitle.textContent = response.title;
+        triageSelectedPriority.textContent = response.priority;
+        triageSelectedPriority.className =
+            "triage-selected-priority " + response.priorityClass;
+
+        triageStudentName.focus();
+    }
+
+    if (helpButton && helpPanel) {
+        helpButton.addEventListener("click", function(event) {
+            event.stopPropagation();
+            helpPanel.classList.contains("show") ? closeHelp() : openHelp();
+        });
+
+        document.querySelectorAll(".help-question").forEach(function(question) {
+            question.addEventListener("click", function() {
+                const questionType = question.dataset.helpQuestion;
+
+                if (questionType === "aluno") {
+                    showStudentTriage();
+                    return;
+                }
+
+                const response = helpResponses[questionType];
+                if (!response) return;
+
+                helpAnswerTitle.textContent = response.title;
+                helpAnswerText.textContent = response.text;
+
+                const whatsappMessage =
+                    "Olá, CEPT! Preciso de ajuda sobre: " + response.title + ".";
+
+                helpWhatsapp.href =
+                    "https://wa.me/5521972274766?text=" +
+                    encodeURIComponent(whatsappMessage);
+
+                helpAnswer.classList.add("show");
+            });
+        });
+
+        document.querySelectorAll(".triage-option").forEach(function(option) {
+            option.addEventListener("click", function() {
+                // Sempre começa um novo assunto com o formulário limpo.
+                triageStudentName.value = "";
+                triageClass.value = "";
+                triageDescription.value = "";
+
+                showStudentForm(option.dataset.triage);
+            });
+        });
+
+        triageBack.addEventListener("click", function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            // Volta para a tela principal do "Precisa de ajuda?"
+            helpQuestions.style.display = "grid";
+            studentTriage.classList.remove("show");
+            triageForm.classList.remove("show");
+            helpAnswer.classList.remove("show");
+        });
+
+        formBack.addEventListener("click", function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            // Ao trocar de assunto, o formulário anterior é descartado.
+            triageStudentName.value = "";
+            triageClass.value = "";
+            triageDescription.value = "";
+
+            // Volta somente para a lista de assuntos sobre o aluno
+            studentTriage.classList.add("show");
+            triageForm.classList.remove("show");
+        });
+
+        triageSubmit.addEventListener("click", function() {
+            const studentName = triageStudentName.value.trim();
+            const studentClass = triageClass.value.trim();
+            const description = triageDescription.value.trim();
+
+            if (!studentName || !studentClass || !description) {
+                alert("Preencha nome do aluno, turma e descreva brevemente o que aconteceu.");
+                return;
+            }
+
+            const selectedTitle = triageSelectedTitle.textContent;
+            const selectedPriority = triageSelectedPriority.textContent;
+
+            // Data e horário são registrados automaticamente no momento do envio.
+            const agora = new Date();
+            const dataSolicitacao = agora.toLocaleDateString("pt-BR");
+            const horarioSolicitacao = agora.toLocaleTimeString("pt-BR", {
+                hour: "2-digit",
+                minute: "2-digit"
+            });
+
+            const whatsappMessage = [
+                "*Olá, CEPT! Gostaria de solicitar atendimento.*",
+                "",
+                "*ASSUNTO:* " + selectedTitle,
+                "*PRIORIDADE:* " + selectedPriority,
+                "*ALUNO:* " + studentName,
+                "*TURMA:* " + studentClass,
+                "*DESCRIÇÃO:* " + description,
+                "",
+                "*DATA DA SOLICITAÇÃO:* " + dataSolicitacao,
+                "*HORÁRIO DA SOLICITAÇÃO:* " + horarioSolicitacao
+            ].join("\n");
+
+            window.open(
+                "https://wa.me/5521972274766?text=" +
+                encodeURIComponent(whatsappMessage),
+                "_blank",
+                "noopener,noreferrer"
+            );
+        });
+
+        document.addEventListener("click", function(event) {
+            if (helpAssistant && !helpAssistant.contains(event.target)) {
+                closeHelp();
+            }
+        });
+    }
+
+    /* =========================
+       MENU MOBILE
+    ========================= */
+
+    const menuToggle =
+        document.getElementById("menuToggle");
+
+    const menu =
+        document.getElementById("menu");
+
+
+    menuToggle.addEventListener(
+        "click",
+        function () {
+
+            menu.classList.toggle("open");
+
+        }
+    );
+
+
+    /* Fecha o menu depois de clicar */
+
+    document
+        .querySelectorAll("#menu a")
+        .forEach(function(link) {
+
+            link.addEventListener(
+                "click",
+                function() {
+
+                    menu.classList.remove("open");
+
+                }
+            );
+
+        });
+
+
+
+    /* =========================
+       BOTÃO VOLTAR AO TOPO
+    ========================= */
+
+    const backTop =
+        document.getElementById("backTop");
+
+
+    window.addEventListener(
+        "scroll",
+        function() {
+
+            if (window.scrollY > 500) {
+
+                backTop.style.display =
+                    "grid";
+
+            } else {
+
+                backTop.style.display =
+                    "none";
+
+            }
+
+        }
+    );
+
+
+    backTop.addEventListener(
+        "click",
+        function() {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        }
+    );
+
+
+
+    /* =========================
+       ANO AUTOMÁTICO
+    ========================= */
+
+    document
+        .getElementById("year")
+        .textContent =
+        new Date().getFullYear();
+
+
+
+    /* =========================
+       MENU ATIVO
+    ========================= */
+
+    const sections =
+        document.querySelectorAll(
+            "section[id]"
+        );
+
+    const links =
+        document.querySelectorAll(
+            ".menu a"
+        );
+
+
+    const observer =
+        new IntersectionObserver(
+
+            function(entries) {
+
+                entries.forEach(
+                    function(entry) {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            links.forEach(
+                                function(link) {
+
+                                    link.classList
+                                        .remove("active");
+
+                                }
+                            );
+
+
+                            const current =
+                                document.querySelector(
+                                    `.menu a[href="#${entry.target.id}"]`
+                                );
+
+
+                            if (current) {
+
+                                current.classList
+                                    .add("active");
+
+                            }
+
+                        }
+
+                    }
+                );
+
+            },
+
+            {
+                rootMargin:
+                    "-35% 0px -55% 0px"
+            }
+
+        );
+
+
+    sections.forEach(
+        function(section) {
+
+            observer.observe(section);
+
+        }
+    );
+
+
+    /* =========================
+       PRIVACIDADE / LGPD
+    ========================= */
+
+    const privacyNotice =
+        document.getElementById("privacyNotice");
+
+    const privacyFloating =
+        document.getElementById("privacyFloating");
+
+    const privacyModal =
+        document.getElementById("privacyModal");
+
+    function acceptPrivacy() {
+        /*
+         * Armazena somente uma preferência local do navegador.
+         * Não envia dados pessoais para o servidor.
+         */
+        localStorage.setItem("cept_privacy_notice", "accepted");
+
+        privacyNotice.classList.remove("show");
+        privacyFloating.classList.add("show");
+    }
+
+    function openPrivacyModal() {
+        privacyModal.classList.add("show");
+        document.body.style.overflow = "hidden";
+    }
+
+    function closePrivacyModal() {
+        privacyModal.classList.remove("show");
+        document.body.style.overflow = "";
+    }
+
+    privacyModal.addEventListener("click", function(event) {
+        if (event.target === privacyModal) {
+            closePrivacyModal();
+        }
+    });
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            closePrivacyModal();
+        }
+    });
+
+    if (localStorage.getItem("cept_privacy_notice") !== "accepted") {
+        privacyNotice.classList.add("show");
+    } else {
+        privacyFloating.classList.add("show");
+    }
+
+
+
+    /* =========================
+       IDIOMAS: PT / EN / 中文
+       O conteúdo continua no mesmo HTML;
+       apenas os textos visíveis são trocados no navegador.
+    ========================= */
+
+    const languageSelector = document.getElementById("languageSelector");
+    const languageButton = document.getElementById("languageButton");
+    const languageName = document.getElementById("languageName");
+    const languageFlag = document.getElementById("languageFlag");
+
+    const translations = {
+    "pt": {
+        "brandTag": "CENTRO EDUCACIONAL PROFISSIONAL E TECNOLÓGICO",
+        "ceptName": "CEPT",
+        "navHome": "Início",
+        "navSchool": "A Escola",
+        "navServices": "Serviços",
+        "navStudents": "Alunos",
+        "navNews": "Notícias",
+        "navGallery": "Galeria",
+        "footerContact": "Contato",
+        "studentArea": "🔒 Área do aluno",
+        "heroEyebrow": "CENTRO EDUCACIONAL PROFISSIONAL E TECNOLÓGICO",
+        "heroTitle": "Educação que transforma, futuro que inspira!",
+        "heroText": "No CEPT, formamos cidadãos preparados para os desafios de hoje e de amanhã, com conhecimento, valores e tecnologia.",
+        "heroButtonSchool": "Conheça nossa escola →",
+        "heroButtonQuick": "Acessos rápidos",
+        "quickLabel": "ACESSO RÁPIDO",
+        "prepara": "Prepara CEPT",
+        "access": "Acessar →",
+        "neerce": "NEERCE",
+        "coc": "COC",
+        "classCouncil": "Conselho de Classe",
+        "adm": "ADM CEPT",
+        "avalia": "Avalia CEPT",
+        "aboutLabel": "SOBRE O CEPT",
+        "aboutTitle": "Uma escola preparada para o futuro.",
+        "aboutTagline": "Educação, tecnologia e futuro",
+        "aboutText1": "O Centro Educacional Profissional e Tecnológico busca unir educação de qualidade, formação humana, inovação e preparação profissional.",
+        "aboutText2": "Nosso ambiente valoriza o aluno, estimula a criatividade e cria oportunidades para que cada estudante desenvolva seu potencial.",
+        "valueQuality": "Educação de qualidade",
+        "valueHuman": "Formação humana",
+        "valueInnovation": "Inovação e tecnologia",
+        "valueFuture": "Compromisso com o futuro",
+        "learnMore": "Saiba mais →",
+        "servicesLabel": "NOSSOS SERVIÇOS",
+        "servicesTitle": "Um portal para facilitar sua rotina",
+        "servicesText": "Encontre rapidamente os principais recursos utilizados pela comunidade escolar.",
+        "preparaDesc": "Ferramentas e conteúdos para apoiar a preparação acadêmica.",
+        "neerceDesc": "Espaço voltado ao acompanhamento e apoio à comunidade escolar.",
+        "councilDesc": "Informações e recursos para acompanhamento pedagógico.",
+        "admDesc": "Área administrativa para processos e gestão escolar.",
+        "avaliaDesc": "Avaliações e acompanhamento do desenvolvimento dos alunos.",
+        "enter": "Entrar →",
+        "communityLabel": "NOSSA COMUNIDADE",
+        "communityTitle": "Todos têm espaço para aprender, crescer e participar.",
+        "communityText": "O CEPT acredita em uma educação inclusiva, acolhedora e conectada com a realidade dos estudantes.",
+        "community1": "Ambiente acolhedor e inclusivo",
+        "community2": "Projetos educacionais e tecnológicos",
+        "community3": "Formação para o mundo profissional",
+        "community4": "Valorização da diversidade",
+        "newsLabel": "ACONTECE NO CEPT",
+        "newsTitle": "Notícias e novidades",
+        "seeAll": "Ver todas →",
+        "newsDate1": "SEMINÁRIO • 10 DE JULHO DE 2025",
+        "newsTitle1": "Nossa equipe participa, em Pequim, do Seminário de Treinamento para Professores de Chinês no Brasil, uma iniciativa que fortalece a ponte entre culturas por meio da educação.",
+        "newsText1": "Uma experiência internacional que aproxima o CEPT da cultura chinesa e fortalece a troca de conhecimentos entre educadores.",
+        "newsDate2": "CELEBRAÇÃO • 1 DE OUTUBRO DE 2025",
+        "newsTitle2": "Hoje celebramos o Dia Nacional da China (1º de outubro)! Um momento de orgulho, história e união, que fortalece ainda mais os laços culturais e de amizade entre nossos povos. 🇨🇳❤️",
+        "newsText2": "Projetos que aproximam tecnologia, criatividade e educação.",
+        "newsDate3": "EVENTO • 24 DE AGOSTO DE 2025",
+        "newsTitle3": "Do laboratório direto para o pódio!",
+        "newsText3": "Ontem, dia 24, os alunos do CEPT Leonel de Moura Brizola participaram da Olimpíada Brasileira de Robótica (OBR) e conquistaram o 3º lugar! 🤖👏",
+        "readNews": "Ler notícia →",
+        "galleryLabel": "GALERIA",
+        "galleryTitle": "Momentos do CEPT",
+        "galleryText": "Um pouco do nosso espaço e da nossa comunidade.",
+        "contactLabel": "FALE CONOSCO",
+        "contactTitle": "Vamos construir o futuro juntos.",
+        "contactText": "Entre em contato com o CEPT para tirar dúvidas, conhecer a escola ou saber mais sobre nossos serviços.",
+        "phoneLabel": "Telefone",
+        "emailLabel": "E-mail",
+        "addressLabel": "Endereço",
+        "addressValue": "Consulte a secretaria",
+        "footerDescription": "Educação, tecnologia e formação para o futuro.",
+        "footerInstitutional": "Institucional",
+        "footerSupport": "Atendimento",
+        "footerStudent": "Área do aluno",
+        "footerSocial": "Redes sociais",
+        "privacyLink": "Privacidade",
+        "privacyChannel": "Canal de privacidade",
+        "privacyNoticeTitle": "🔒 Privacidade e proteção de dados",
+        "privacyNoticeText": "O CEPT valoriza a sua privacidade. Este site poderá tratar dados pessoais quando você utilizar seus canais de atendimento. Consulte a",
+        "privacyPolicyButton": "Política de Privacidade",
+        "privacyContinue": "para entender como os dados são tratados.",
+        "privacyAccept": "Entendi",
+        "privacySettings": "Ver política",
+        "privacyEyebrow": "PRIVACIDADE E PROTEÇÃO DE DADOS",
+        "privacyTitle": "Política de Privacidade",
+        "privacyIntro": "Esta página apresenta, de forma simples, como o portal do CEPT pretende tratar dados pessoais. As informações institucionais, contatos oficiais e prazos de retenção devem ser confirmados pela escola antes da publicação definitiva.",
+        "privacyH1": "1. Quais dados podem ser tratados?",
+        "privacyP1": "Dependendo do serviço utilizado, poderão ser tratados dados fornecidos voluntariamente pelo visitante, como nome, e-mail, telefone e informações necessárias para responder a uma solicitação.",
+        "privacyH2": "2. Para que os dados são utilizados?",
+        "privacyP2": "Os dados poderão ser utilizados para atendimento, comunicação com a comunidade escolar, resposta a solicitações e execução dos serviços disponibilizados pelo CEPT.",
+        "privacyH3": "3. Minimização de dados",
+        "privacyP3": "O portal deve solicitar somente as informações necessárias para cada finalidade. Dados de alunos, professores ou responsáveis não devem ser publicados em páginas públicas.",
+        "privacyH4": "4. Área de alunos e professores",
+        "privacyP4": "Informações acadêmicas, notas, documentos e demais dados restritos deverão ser disponibilizados somente após autenticação e autorização adequadas. Essa proteção será implementada no backend do sistema, e não apenas no HTML.",
+        "privacyH5": "5. Segurança",
+        "privacyP5": "O sistema deverá adotar medidas técnicas e administrativas proporcionais aos riscos, incluindo HTTPS, controle de acesso, autenticação, armazenamento seguro de senhas, validação de dados, atualizações de dependências e proteção do banco de dados.",
+        "privacyH6": "6. Cookies",
+        "privacyP6": "Este portal não deve utilizar cookies não essenciais sem a devida configuração e informação ao visitante. Caso futuramente sejam utilizados cookies de análise, publicidade ou outras finalidades não essenciais, o mecanismo de consentimento deverá ser atualizado para refletir essa utilização.",
+        "privacyH7": "7. Direitos do titular",
+        "privacyP7": "Nos termos da legislação aplicável, o titular pode exercer direitos relacionados aos seus dados pessoais, observadas as hipóteses e limitações previstas em lei. O canal oficial da escola deverá ser utilizado para receber e tratar essas solicitações.",
+        "privacyH8": "8. Canal de privacidade",
+        "privacyP8": "Para solicitações relacionadas à privacidade, utilize o canal oficial definido pelo CEPT:",
+        "privacyH9": "9. Atualizações",
+        "privacyP9": "Esta política poderá ser atualizada quando houver alteração nas funcionalidades do portal ou nas práticas de tratamento de dados.",
+        "privacyH10": "10. Atenção antes da publicação",
+        "privacyP10": "Os dados de contato, responsável pelo tratamento, finalidades específicas, bases legais, prazos de retenção e demais informações institucionais devem ser preenchidos e validados pelo CEPT antes de o site entrar em produção.",
+        "pageTitle": "CEPT | Centro Educacional Profissional e Tecnológico",
+        "pageDescription": "CEPT - Centro Educacional Profissional e Tecnológico"
+    },
+    "en": {
+        "brandTag": "PROFESSIONAL AND TECHNOLOGICAL EDUCATION CENTER",
+        "ceptName": "CEPT",
+        "navHome": "Home",
+        "navSchool": "Our School",
+        "navServices": "Services",
+        "navStudents": "Students",
+        "navNews": "News",
+        "navGallery": "Gallery",
+        "footerContact": "Contact",
+        "studentArea": "🔒 Student Area",
+        "heroEyebrow": "PROFESSIONAL AND TECHNOLOGICAL EDUCATION CENTER",
+        "heroTitle": "Education that transforms, a future that inspires!",
+        "heroText": "At CEPT, we prepare citizens for today's and tomorrow's challenges through knowledge, values and technology.",
+        "heroButtonSchool": "Discover our school →",
+        "heroButtonQuick": "Quick access",
+        "quickLabel": "QUICK ACCESS",
+        "prepara": "CEPT Preparation",
+        "access": "Access →",
+        "neerce": "NEERCE",
+        "coc": "COC",
+        "classCouncil": "Class Council",
+        "adm": "CEPT Administration",
+        "avalia": "CEPT Assessment",
+        "aboutLabel": "ABOUT CEPT",
+        "aboutTitle": "A school prepared for the future.",
+        "aboutTagline": "Education, technology and the future",
+        "aboutText1": "The Professional and Technological Education Center seeks to unite quality education, human development, innovation and professional preparation.",
+        "aboutText2": "Our environment values students, encourages creativity and creates opportunities for each student to develop their potential.",
+        "valueQuality": "Quality education",
+        "valueHuman": "Human development",
+        "valueInnovation": "Innovation and technology",
+        "valueFuture": "Commitment to the future",
+        "learnMore": "Learn more →",
+        "servicesLabel": "OUR SERVICES",
+        "servicesTitle": "A portal to make your routine easier",
+        "servicesText": "Quickly find the main resources used by the school community.",
+        "preparaDesc": "Tools and content to support academic preparation.",
+        "neerceDesc": "A space for monitoring and supporting the school community.",
+        "councilDesc": "Information and resources for educational monitoring.",
+        "admDesc": "Administrative area for school processes and management.",
+        "avaliaDesc": "Assessments and monitoring of student development.",
+        "enter": "Enter →",
+        "communityLabel": "OUR COMMUNITY",
+        "communityTitle": "Everyone has a place to learn, grow and participate.",
+        "communityText": "CEPT believes in inclusive, welcoming education connected to students' reality.",
+        "community1": "Welcoming and inclusive environment",
+        "community2": "Educational and technology projects",
+        "community3": "Preparation for the professional world",
+        "community4": "Valuing diversity",
+        "newsLabel": "WHAT'S HAPPENING AT CEPT",
+        "newsTitle": "News and updates",
+        "seeAll": "See all →",
+        "newsDate1": "SEMINAR • JULY 10, 2025",
+        "newsTitle1": "Our team is participating in Beijing in the Training Seminar for Chinese Language Teachers in Brazil, an initiative that strengthens the bridge between cultures through education.",
+        "newsText1": "An international experience that brings CEPT closer to Chinese culture and strengthens the exchange of knowledge between educators.",
+        "newsDate2": "PROJECTS • MAY 15",
+        "newsTitle2": "Learning that goes beyond the classroom",
+        "newsText2": "Projects that bring technology, creativity and education together.",
+        "newsDate3": "EVENT • AUGUST 24, 2025",
+        "newsTitle3": "Student participation and leadership",
+        "newsText3": "Yesterday, on the 24th, CEPT Leonel de Moura Brizola students participated in the Brazilian Robotics Olympiad (OBR) and won 3rd place! 🤖👏",
+        "readNews": "Read news →",
+        "galleryLabel": "GALLERY",
+        "galleryTitle": "CEPT moments",
+        "galleryText": "A glimpse of our space and our community.",
+        "contactLabel": "CONTACT US",
+        "contactTitle": "Let's build the future together.",
+        "contactText": "Contact CEPT with questions, to learn about the school or to find out more about our services.",
+        "phoneLabel": "Phone",
+        "emailLabel": "E-mail",
+        "addressLabel": "Address",
+        "addressValue": "Contact the school office",
+        "footerDescription": "Education, technology and preparation for the future.",
+        "footerInstitutional": "Institutional",
+        "footerSupport": "Support",
+        "footerStudent": "Student Area",
+        "footerSocial": "Social media",
+        "privacyLink": "Privacy",
+        "privacyChannel": "Privacy channel",
+        "privacyNoticeTitle": "🔒 Privacy and data protection",
+        "privacyNoticeText": "CEPT values your privacy. This site may process personal data when you use its service channels. See the",
+        "privacyPolicyButton": "Privacy Policy",
+        "privacyContinue": "to understand how data is processed.",
+        "privacyAccept": "Got it",
+        "privacySettings": "View policy",
+        "privacyEyebrow": "PRIVACY AND DATA PROTECTION",
+        "privacyTitle": "Privacy Policy",
+        "privacyIntro": "This page presents, in simple terms, how the CEPT portal intends to process personal data. Institutional information, official contacts and retention periods must be confirmed by the school before final publication.",
+        "privacyH1": "1. What data may be processed?",
+        "privacyP1": "Depending on the service used, data voluntarily provided by the visitor may be processed, such as name, e-mail, phone number and information needed to respond to a request.",
+        "privacyH2": "2. What is the data used for?",
+        "privacyP2": "Data may be used for support, communication with the school community, responding to requests and providing the services offered by CEPT.",
+        "privacyH3": "3. Data minimization",
+        "privacyP3": "The portal should request only the information necessary for each purpose. Student, teacher or guardian data should not be published on public pages.",
+        "privacyH4": "4. Student and teacher area",
+        "privacyP4": "Academic information, grades, documents and other restricted data should only be made available after appropriate authentication and authorization. This protection will be implemented in the system backend, not only in HTML.",
+        "privacyH5": "5. Security",
+        "privacyP5": "The system should adopt technical and administrative measures proportional to the risks, including HTTPS, access control, authentication, secure password storage, data validation, dependency updates and database protection.",
+        "privacyH6": "6. Cookies",
+        "privacyP6": "This portal should not use non-essential cookies without proper configuration and notice to the visitor. If analytics, advertising or other non-essential cookies are used in the future, the consent mechanism should be updated accordingly.",
+        "privacyH7": "7. Data subject rights",
+        "privacyP7": "Under applicable law, the data subject may exercise rights related to their personal data, subject to legal conditions and limitations. The school's official channel should be used to receive and process such requests.",
+        "privacyH8": "8. Privacy channel",
+        "privacyP8": "For privacy-related requests, use the official channel defined by CEPT:",
+        "privacyH9": "9. Updates",
+        "privacyP9": "This policy may be updated when there are changes to the portal's functionality or data-processing practices.",
+        "privacyH10": "10. Attention before publication",
+        "privacyP10": "Contact details, the person responsible for processing, specific purposes, legal bases, retention periods and other institutional information must be completed and validated by CEPT before the site goes into production.",
+        "pageTitle": "CEPT | Professional and Technological Education Center",
+        "pageDescription": "CEPT - Professional and Technological Education Center"
+    },
+    "zh": {
+        "brandTag": "职业与技术教育中心",
+        "ceptName": "CEPT",
+        "navHome": "首页",
+        "navSchool": "学校介绍",
+        "navServices": "服务",
+        "navStudents": "学生",
+        "navNews": "新闻",
+        "navGallery": "相册",
+        "footerContact": "联系我们",
+        "studentArea": "🔒 学生专区",
+        "heroEyebrow": "职业与技术教育中心",
+        "heroTitle": "改变教育，启迪未来！",
+        "heroText": "在 CEPT，我们通过知识、价值观和科技，帮助学生迎接今天与明天的挑战。",
+        "heroButtonSchool": "了解我们的学校 →",
+        "heroButtonQuick": "快速访问",
+        "quickLabel": "快速访问",
+        "prepara": "CEPT 学习准备",
+        "access": "进入 →",
+        "neerce": "NEERCE",
+        "coc": "COC",
+        "classCouncil": "班级委员会",
+        "adm": "CEPT 行政管理",
+        "avalia": "CEPT 评估",
+        "aboutLabel": "关于 CEPT",
+        "aboutTitle": "为未来而准备的学校。",
+        "aboutTagline": "教育、科技与未来",
+        "aboutText1": "职业与技术教育中心致力于融合优质教育、人文培养、创新与职业准备。",
+        "aboutText2": "我们的校园重视学生，鼓励创造力，并为每位学生发挥自身潜力创造机会。",
+        "valueQuality": "优质教育",
+        "valueHuman": "人文培养",
+        "valueInnovation": "创新与科技",
+        "valueFuture": "对未来的承诺",
+        "learnMore": "了解更多 →",
+        "servicesLabel": "我们的服务",
+        "servicesTitle": "让校园生活更加便捷的平台",
+        "servicesText": "快速找到校园社区使用的主要资源。",
+        "preparaDesc": "支持学业准备的工具与内容。",
+        "neerceDesc": "为校园社区提供跟进与支持的空间。",
+        "councilDesc": "用于教学跟进的信息与资源。",
+        "admDesc": "用于学校流程与管理的行政区域。",
+        "avaliaDesc": "学生评估与发展跟踪。",
+        "enter": "进入 →",
+        "communityLabel": "我们的社区",
+        "communityTitle": "每个人都拥有学习、成长和参与的空间。",
+        "communityText": "CEPT 倡导包容、友善并贴近学生实际的教育。",
+        "community1": "友善且包容的环境",
+        "community2": "教育与科技项目",
+        "community3": "面向职业世界的培养",
+        "community4": "尊重并重视多样性",
+        "newsLabel": "CEPT 最新动态",
+        "newsTitle": "新闻与最新动态",
+        "seeAll": "查看全部 →",
+        "newsDate1": "研讨会 • 2025年7月10日",
+        "newsTitle1": "我们的团队正在北京参加巴西中文教师培训研讨会，这项活动通过教育进一步加强不同文化之间的交流与联系。",
+        "newsText1": "一次国际交流经历，让CEPT更加贴近中国文化，并通过教育促进不同文化之间的知识交流。",
+        "newsDate2": "项目 • 5月15日",
+        "newsTitle2": "超越课堂的学习",
+        "newsText2": "让科技、创造力与教育相结合的项目。",
+        "newsDate3": "活动 • 2025年8月24日",
+        "newsTitle3": "学生参与与主人翁精神",
+        "newsText3": "昨天，也就是24日，CEPT Leonel de Moura Brizola 学校的学生参加了巴西机器人奥林匹克竞赛（OBR），并获得了第三名！🤖👏",
+        "readNews": "阅读新闻 →",
+        "galleryLabel": "相册",
+        "galleryTitle": "CEPT 精彩瞬间",
+        "galleryText": "了解我们的校园空间与社区。",
+        "contactLabel": "联系我们",
+        "contactTitle": "让我们共同建设未来。",
+        "contactText": "如有疑问、想了解学校或希望了解更多服务，请联系 CEPT。",
+        "phoneLabel": "电话",
+        "emailLabel": "电子邮箱",
+        "addressLabel": "地址",
+        "addressValue": "请咨询学校秘书处",
+        "footerDescription": "教育、科技与面向未来的培养。",
+        "footerInstitutional": "学校信息",
+        "footerSupport": "服务",
+        "footerStudent": "学生专区",
+        "footerSocial": "社交媒体",
+        "privacyLink": "隐私保护",
+        "privacyChannel": "隐私联系渠道",
+        "privacyNoticeTitle": "🔒 隐私与数据保护",
+        "privacyNoticeText": "CEPT 重视您的隐私。当您使用服务渠道时，本网站可能会处理个人数据。请查看",
+        "privacyPolicyButton": "隐私政策",
+        "privacyContinue": "以了解数据如何被处理。",
+        "privacyAccept": "知道了",
+        "privacySettings": "查看政策",
+        "privacyEyebrow": "隐私与数据保护",
+        "privacyTitle": "隐私政策",
+        "privacyIntro": "本页面以简单的方式说明 CEPT 门户计划如何处理个人数据。机构信息、官方联系方式和数据保留期限须由学校在正式发布前确认。",
+        "privacyH1": "1. 哪些数据可能被处理？",
+        "privacyP1": "根据所使用的服务，可能会处理访客自愿提供的数据，例如姓名、电子邮箱、电话号码以及回复请求所需的信息。",
+        "privacyH2": "2. 数据用于什么？",
+        "privacyP2": "数据可用于客户服务、与校园社区沟通、回复请求以及执行 CEPT 提供的服务。",
+        "privacyH3": "3. 数据最小化",
+        "privacyP3": "门户应仅收集每项用途所必需的信息。学生、教师或监护人的数据不应发布在公共页面上。",
+        "privacyH4": "4. 学生与教师专区",
+        "privacyP4": "学业信息、成绩、文件及其他受限数据，只有在完成适当的身份验证和授权后才能提供。这种保护将在系统后端实现，而不仅仅依靠 HTML。",
+        "privacyH5": "5. 安全",
+        "privacyP5": "系统应根据风险采取相应的技术和管理措施，包括 HTTPS、访问控制、身份验证、安全密码存储、数据验证、依赖项更新以及数据库保护。",
+        "privacyH6": "6. Cookie",
+        "privacyP6": "本门户不应在没有适当配置和告知访客的情况下使用非必要 Cookie。如果未来使用分析、广告或其他非必要 Cookie，应更新同意机制以反映这种使用。",
+        "privacyH7": "7. 数据主体权利",
+        "privacyP7": "根据适用法律，数据主体可以在法律规定的条件和限制下行使与其个人数据相关的权利。相关请求应通过学校官方渠道接收和处理。",
+        "privacyH8": "8. 隐私联系渠道",
+        "privacyP8": "如有隐私相关请求，请使用 CEPT 指定的官方渠道：",
+        "privacyH9": "9. 更新",
+        "privacyP9": "当门户功能或数据处理方式发生变化时，本政策可能会进行更新。",
+        "privacyH10": "10. 发布前注意事项",
+        "privacyP10": "联系方式、数据处理负责人、具体目的、法律依据、保留期限及其他机构信息，必须在网站正式上线前由 CEPT 填写并确认。",
+        "pageTitle": "CEPT | 职业与技术教育中心",
+        "pageDescription": "CEPT - 职业与技术教育中心"
+    }
+};
+
+    const languageInfo = {
+        pt: { name: "Português", flag: "🇧🇷" },
+        en: { name: "English", flag: "🇺🇸" },
+        zh: { name: "中文", flag: "🇨🇳" }
+    };
+
+    function setLanguage(lang) {
+        if (!translations[lang]) return;
+
+        document.documentElement.lang =
+            lang === "zh" ? "zh-CN" : lang === "en" ? "en" : "pt-BR";
+
+        document.title = translations[lang].pageTitle;
+
+        const description = document.querySelector('meta[name="description"]');
+        if (description) {
+            description.setAttribute("content", translations[lang].pageDescription);
+        }
+
+        document.querySelectorAll("[data-i18n]").forEach(function(element) {
+            const key = element.getAttribute("data-i18n");
+
+            if (translations[lang][key] !== undefined) {
+                if (key === "heroTitle") {
+                    const title = translations[lang][key];
+                    const match = title.match(/^(.+?)([,，])\s*(.+)$/);
+
+                    if (match) {
+                        element.innerHTML =
+                            match[1] + match[2] + "<br>" +
+                            "<span class=\"hero-highlight\">" +
+                            match[3] +
+                            "</span>";
+                    } else {
+                        element.textContent = title;
+                    }
+                } else {
+                    element.textContent = translations[lang][key];
+                }
+            }
+        });
+
+        languageName.textContent = languageInfo[lang].name;
+        languageFlag.textContent = languageInfo[lang].flag;
+
+        languageButton.setAttribute(
+            "aria-label",
+            lang === "zh"
+                ? "选择语言"
+                : lang === "en"
+                    ? "Select language"
+                    : "Selecionar idioma"
+        );
+
+        const privacyFloating = document.getElementById("privacyFloating");
+        if (privacyFloating) {
+            privacyFloating.setAttribute(
+                "aria-label",
+                lang === "zh"
+                    ? "打开隐私信息"
+                    : lang === "en"
+                        ? "Open privacy information"
+                        : "Abrir informações de privacidade"
+            );
+            privacyFloating.setAttribute(
+                "title",
+                lang === "zh" ? "隐私" : lang === "en" ? "Privacy" : "Privacidade"
+            );
+        }
+
+        const privacyClose = document.querySelector(".privacy-close");
+        if (privacyClose) {
+            privacyClose.setAttribute(
+                "aria-label",
+                lang === "zh"
+                    ? "关闭隐私政策"
+                    : lang === "en"
+                        ? "Close privacy policy"
+                        : "Fechar política de privacidade"
+            );
+        }
+
+        document.querySelectorAll(".language-option").forEach(function(option) {
+            option.classList.toggle(
+                "active",
+                option.dataset.lang === lang
+            );
+        });
+
+        localStorage.setItem("cept_language", lang);
+        languageSelector.classList.remove("open");
+        languageButton.setAttribute("aria-expanded", "false");
+    }
+
+    languageButton.addEventListener("click", function(event) {
+        event.stopPropagation();
+
+        const isOpen =
+            languageSelector.classList.toggle("open");
+
+        languageButton.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+    });
+
+    document.querySelectorAll(".language-option").forEach(function(option) {
+        option.addEventListener("click", function() {
+            setLanguage(option.dataset.lang);
+        });
+    });
+
+    document.addEventListener("click", function(event) {
+        if (!languageSelector.contains(event.target)) {
+            languageSelector.classList.remove("open");
+            languageButton.setAttribute("aria-expanded", "false");
+        }
+    });
+
+    /*
+     * Idioma salvo apenas localmente no navegador.
+     * Não é enviado ao servidor.
+     */
+    const savedLanguage =
+        localStorage.getItem("cept_language") || "pt";
+
+    setLanguage(savedLanguage);
+</script>
+
+</body>
+</html>
